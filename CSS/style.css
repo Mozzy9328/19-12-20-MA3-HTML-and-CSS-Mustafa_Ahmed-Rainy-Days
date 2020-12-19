@@ -1,0 +1,32 @@
+/* Header Section */
+header div a {
+	display: inline-block;
+	background-color: #eee9e3;
+	color: black;
+	font-style: bold;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.top-header-container {
+	display: flex;
+	background-color: #eee9e3;
+	margin: 0%;
+	padding: 20px;
+}
+
+.nav-1 {
+	border: red solid;
+	order: 2;
+	flex: 1;
+}
+.nav-2 {
+	border: red solid;
+	order: 1;
+	flex: 3;
+}
+form input {
+	width: 400px;
+	height: 25px;
+	border-radius: 20%;
+}
