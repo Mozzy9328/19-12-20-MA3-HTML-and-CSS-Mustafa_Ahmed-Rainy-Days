@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Faustina";
+	src: url("../Fonts/Faustina-VF-Beta-Regular.ttf.woff") format("truetype");
+}
+
 /* Header Section */
 header div a {
 	display: inline-block;
@@ -7,26 +12,175 @@ header div a {
 	font-size: 24px;
 	text-decoration: none;
 }
-
 .top-header-container {
+	border: #707070 solid;
 	display: flex;
+	flex-wrap: wrap;
 	background-color: #eee9e3;
-	margin: 0%;
-	padding: 20px;
+}
+.nav-0 {
+	border-right: #707070 solid;
+	order: 1;
+	text-align: center;
+	min-width: 150px;
+	max-width: 150px;
+	min-height: 70px;
+	max-height: 70px;
 }
 
 .nav-1 {
-	border: red solid;
-	order: 2;
-	flex: 1;
+	text-transform: uppercase;
+	text-align: center;
+	border-right: #707070 solid;
+	order: 4;
+	min-width: 250px;
+	max-width: 250px;
+	min-height: 60px;
+	max-height: 70px;
 }
 .nav-2 {
-	border: red solid;
-	order: 1;
-	flex: 3;
+	border-right: #707070 solid;
+	text-transform: uppercase;
+	text-align: center;
+	order: 2;
+	min-width: 250px;
+	max-width: 250px;
+	min-height: 60px;
+	max-height: 70px;
 }
+.nav-3 {
+	border-right: #707070 solid;
+	order: 3;
+	min-width: 500px;
+	max-width: 500px;
+	min-height: 60px;
+	max-height: 70px;
+}
+
 form input {
 	width: 400px;
 	height: 25px;
-	border-radius: 20%;
+	border-radius: 100px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
+
+/* Positioning of Nav section*/
+header div img {
+	min-width: 75px;
+	height: 40px;
+	position: relative;
+	top: 15px;
+	left: 13px;
+}
+
+header div a {
+	position: relative;
+	top: 15px;
+	left: 13px;
+}
+
+/* Main Section images */
+
+main {
+	display: flex;
+	background-image: url("../Images/Rainy\ days\ background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	min-height: 900px;
+	max-width: 100%;
+}
+
+/* Main section Button */
+.main-container {
+	display: flex;
+	margin: 0 auto;
+	margin-top: 440px;
+}
+
+.button:hover {
+	background-color: #e450d3;
+	text-decoration-line: underline;
+}
+main section div a {
+	font-family: "Faustina", Verdana, Tahoma, sans-serif;
+	background-color: #000000;
+	font-size: 35px;
+	color: #fafafa;
+	border-radius: 243px;
+	padding: 24px 80px;
+	margin: 0px 80px 0px 100px;
+}
+.button {
+	display: inline-block;
+}
+
+/* Mobile version *
+
+@media (max-width: 500px) {
+	.top-header-container {
+		border: #707070 solid;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #eee9e3;
+	}
+	.nav-0 {
+		order: 4;
+		flex: auto;
+		margin: 0 auto;
+		min-width: 100px;
+		max-width: 100px;
+		min-height: 70px;
+		max-height: 70px;
+	}
+
+	.nav-1 {
+		order: 2;
+		flex: auto;
+		text-align: end;
+		padding-right: 0%;
+		min-width: 120px;
+		max-width: 120px;
+		min-height: 60px;
+		max-height: 70px;
+	}
+	.nav-2 {
+		border-right: #707070 solid;
+		order: 1;
+		padding-right: 25px;
+		flex: auto;
+		min-width: 120px;
+		max-width: 120px;
+		min-height: 60px;
+		max-height: 70px;
+	}
+	.nav-3 {
+		border-right: #707070 solid;
+		order: 3;
+		flex: auto;
+		min-width: 500px;
+		max-width: 500px;
+		min-height: 60px;
+		max-height: 70px;
+	}
+
+	form input {
+		width: 270px;
+		height: 25px;
+		border-radius: 100px;
+		position: relative;
+		top: 15px;
+		left: 10px;
+	}
+	header div img {
+		min-width: 75px;
+		height: 40px;
+		position: relative;
+		top: 15px;
+		left: 13px;
+	}
+}
+
+/* Regular stuff to be added to both media queries */
