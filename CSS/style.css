@@ -14,28 +14,23 @@ header div a {
 }
 .top-header-container {
 	border: #707070 solid;
+	padding: 30px 0px;
 	display: flex;
-	justify-content: baseline;
+	align-items: center;
 	flex-wrap: wrap;
 	background-color: #f3f0ec;
 }
 .nav-0 /* Logo */ {
-	margin: 0;
+	border: #000000 solid;
+	margin: 0 auto;
 	order: 1;
-	min-width: 170px;
-	max-width: 170px;
-	min-height: 70px;
-	max-height: 70px;
 }
 
 .nav-1 /* Contact us */ {
+	border: #000000 solid;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 0 auto;
 	order: 2;
-	min-width: 200px;
-	max-width: 200px;
-	min-height: 70px;
-	max-height: 70px;
 }
 
 header div a:hover {
@@ -43,65 +38,36 @@ header div a:hover {
 	color: #707070;
 }
 .nav-2 /* About us */ {
+	border: #000000 solid;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 0 auto;
 	order: 4;
-	min-width: 180px;
-	max-width: 180px;
-	min-height: 70px;
-	max-height: 70px;
 }
 .nav-3 /* Search box */ {
-	margin: 0;
+	border: #000000 solid;
+	margin: 0 auto;
 	order: 3;
-	min-width: 550px;
-	max-width: 550px;
-	min-height: 70px;
-	max-height: 70px;
 }
 
 .nav-4 /* Icon Section in Nav */ {
-	margin: 0px 0px 0px 80px;
+	border: #000000 solid;
+	margin: 0 auto;
 	order: 5;
-	min-width: 200px;
-	max-width: 200px;
-	min-height: 70px;
-	max-height: 70px;
-}
-.nav-4 {
-	position: relative;
-	top: 15px;
 }
 form input {
-	position: absolute;
-	width: 400px;
-	height: 25px;
+	min-width: 350px;
+	max-height: 25px;
 	text-align: center;
 	border-radius: 100px;
-	margin-top: 20px;
-	margin-left: 65px;
-}
-
-form i {
-	position: relative;
-	left: 425px;
-	top: 27px;
 }
 
 /* Positioning of Nav section*/
 header div img /* Logo size */ {
-	min-width: 75px;
-	height: 40px;
-	position: relative;
-	top: 15px;
-	left: 43px;
+	max-width: 75px;
 }
 
 header div a {
-	position: relative;
 	text-align: center;
-	top: 15px;
-	left: 30px;
 }
 
 /* Main Section images */
@@ -117,6 +83,7 @@ main {
 	max-width: 100%;
 }
 
+/* FIX THIS ASAP */
 /* Main section Button */
 .main-container {
 	display: flex;
@@ -149,31 +116,26 @@ main section div a:hover {
 }
 
 /* Mobile version */
-
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
 	.top-header-container {
 		border: #707070 solid;
+		padding: 30px 0px;
 		display: flex;
+		align-items: center;
 		flex-wrap: wrap;
 		background-color: #f3f0ec;
 	}
 	.nav-0 /* Logo */ {
-		margin: 0 auto;
+		border: #000000 solid;
+		margin: auto;
 		order: 1;
-		min-width: 170px;
-		max-width: 170px;
-		min-height: 70px;
-		max-height: 70px;
 	}
 
 	.nav-1 /* Contact us */ {
+		border: #000000 solid;
 		text-transform: uppercase;
-		margin: 0 auto;
-		order: 2;
-		min-width: 200px;
-		max-width: 200px;
-		min-height: 70px;
-		max-height: 70px;
+		margin: auto;
+		order: 5;
 	}
 
 	header div a:hover {
@@ -181,47 +143,35 @@ main section div a:hover {
 		color: #707070;
 	}
 	.nav-2 /* About us */ {
+		border: #000000 solid;
 		text-transform: uppercase;
-		margin: 0 auto;
-		order: 3;
-		min-width: 180px;
-		max-width: 180px;
-		min-height: 70px;
-		max-height: 70px;
+		margin: auto;
+		order: 4;
 	}
 	.nav-3 /* Search box */ {
-		margin: 0 auto;
-		order: 5;
-		min-width: 550px;
-		max-width: 550px;
-		min-height: 70px;
-		max-height: 70px;
+		border: #000000 solid;
+		margin: auto;
+		order: 3;
 	}
 
 	.nav-4 /* Icon Section in Nav */ {
-		margin: 0px 0px 0px 50px;
-		order: 4;
-		min-width: 200px;
-		max-width: 200px;
-		min-height: 70px;
-		max-height: 70px;
-	}
-	.nav-4 {
-		position: relative;
-		top: 15px;
+		border: #000000 solid;
+		margin: auto;
+		order: 2;
 	}
 	form input {
-		position: absolute;
-		max-width: 0 auto;
-		height: 25px;
+		max-width: 300px;
+		max-height: 25px;
 		text-align: center;
 		border-radius: 100px;
-		margin-top: 20px;
-		margin-left: 65px;
 	}
 
-	form i {
-		position: relative;
-		left: 435px;
-		top: 27px;
-	
+	/* Positioning of Nav section*/
+	header div img /* Logo size */ {
+		max-width: 75px;
+	}
+
+	header div a {
+		text-align: center;
+	}
+}
