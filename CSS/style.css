@@ -1,36 +1,55 @@
-@font-face {
-	font-family: "Faustina";
-	src: url("../Fonts/Faustina-VF-Beta-Regular.ttf.woff") format("truetype");
+@import url("https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;700&display=swap");
+
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: "Faustina", serif;
 }
 
 /* Header Section */
+h1 {
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	font-size: 100px;
+}
+
+h2 {
+	position: absolute;
+	left: 36.5%;
+	top: 40%;
+	font-size: 40px;
+}
+
 header div a {
-	display: inline-block;
-	background-color: #eee9e3;
 	color: black;
-	font-style: bold;
 	font-size: 24px;
+	font-weight: bold;
+	text-emphasis: nowrap;
 	text-decoration: none;
 }
-.top-header-container {
-	border: #707070 solid;
-	padding: 30px 0px;
+header section:nth-of-type(2) {
+	position: relative;
+	left: 50%;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
-	flex-wrap: wrap;
-	background-color: #f3f0ec;
+	flex-wrap: nowrap;
 }
 .nav-0 /* Logo */ {
 	border: #000000 solid;
-	margin: 0 auto;
+	margin-right: 10%;
+	padding-right: 10%;
 	order: 1;
 }
 
 .nav-1 /* Contact us */ {
 	border: #000000 solid;
 	text-transform: uppercase;
-	margin: 0 auto;
+	margin-right: 10%;
 	order: 2;
+	padding: 0 5%;
 }
 
 header div a:hover {
@@ -40,18 +59,18 @@ header div a:hover {
 .nav-2 /* About us */ {
 	border: #000000 solid;
 	text-transform: uppercase;
-	margin: 0 auto;
+	margin-right: 10%;
 	order: 4;
 }
 .nav-3 /* Search box */ {
 	border: #000000 solid;
-	margin: 0 auto;
+	margin-right: 10%;
 	order: 3;
 }
 
 .nav-4 /* Icon Section in Nav */ {
 	border: #000000 solid;
-	margin: 0 auto;
+	margin-right: 10%;
 	order: 5;
 }
 form input {
@@ -63,7 +82,7 @@ form input {
 
 /* Positioning of Nav section*/
 header div img /* Logo size */ {
-	max-width: 75px;
+	width: 75px;
 }
 
 header div a {
@@ -72,14 +91,15 @@ header div a {
 
 /* Main Section images */
 
-main {
+body {
 	display: flex;
-	background-image: url("../Images/Rainy\ days\ background.jpg");
+	background-image: url("../Images/Background\ Photo\ with\ blur.jpg");
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
-	min-height: 900px;
+	max-height: 100%;
 	max-width: 100%;
 }
 
@@ -87,18 +107,20 @@ main {
 /* Main section Button */
 .main-container {
 	display: flex;
-	margin: 0 auto;
-	margin-top: 440px;
+	position: relative;
+	top: 450px;
+	left: -370px;
 }
 
 main section div a {
-	font-family: "Faustina", Verdana, Tahoma, sans-serif;
+	font-family: "Faustina", serif;
 	background-color: #000000;
 	font-size: 35px;
 	color: #fafafa;
 	border-radius: 243px;
 	padding: 24px 50px;
 	margin: 0px 80px 0px 100px;
+	text-decoration: none;
 }
 main section div a:hover {
 	background-color: #707070;
