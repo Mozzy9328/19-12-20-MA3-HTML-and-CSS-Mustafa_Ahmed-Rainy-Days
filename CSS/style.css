@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;700&display=swap");
-
 * {
 	margin: 0%;
 	padding: 0%;
@@ -8,16 +7,14 @@
 
 /* Header Section */
 h1 {
-	position: absolute;
-	left: 35%;
-	top: 20%;
-	font-size: 100px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 150px;
 }
 
 h2 {
-	position: absolute;
-	left: 36.5%;
-	top: 40%;
+	margin: 0 auto;
+	text-align: center;
 	font-size: 40px;
 }
 
@@ -28,28 +25,23 @@ header div a {
 	text-emphasis: nowrap;
 	text-decoration: none;
 }
-header section:nth-of-type(2) {
-	position: relative;
-	left: 50%;
+.top-header-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: nowrap;
+	margin: 0 auto;
 }
 .nav-0 /* Logo */ {
 	border: #000000 solid;
-	margin-right: 10%;
-	padding-right: 10%;
 	order: 1;
 }
 
 .nav-1 /* Contact us */ {
 	border: #000000 solid;
-	text-transform: uppercase;
-	margin-right: 10%;
 	order: 2;
-	padding: 0 5%;
+	text-transform: uppercase;
 }
 
 header div a:hover {
@@ -59,18 +51,15 @@ header div a:hover {
 .nav-2 /* About us */ {
 	border: #000000 solid;
 	text-transform: uppercase;
-	margin-right: 10%;
 	order: 4;
 }
 .nav-3 /* Search box */ {
 	border: #000000 solid;
-	margin-right: 10%;
 	order: 3;
 }
 
 .nav-4 /* Icon Section in Nav */ {
 	border: #000000 solid;
-	margin-right: 10%;
 	order: 5;
 }
 form input {
@@ -82,7 +71,7 @@ form input {
 
 /* Positioning of Nav section*/
 header div img /* Logo size */ {
-	width: 75px;
+	width: 100px;
 }
 
 header div a {
@@ -92,108 +81,57 @@ header div a {
 /* Main Section images */
 
 body {
-	display: flex;
+	position: relative;
 	background-image: url("../Images/Background\ Photo\ with\ blur.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	max-height: 100%;
-	max-width: 100%;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
 }
 
 /* FIX THIS ASAP */
 /* Main section Button */
-.main-container {
-	display: flex;
+
+.second-container {
 	position: relative;
-	top: 450px;
-	left: -370px;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+.third-container {
+	position: relative;
+	top: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
-main section div a {
+.woman-button {
 	font-family: "Faustina", serif;
 	background-color: #000000;
 	font-size: 35px;
-	color: #fafafa;
 	border-radius: 243px;
-	padding: 24px 50px;
-	margin: 0px 80px 0px 100px;
+	padding: 24px 40px;
+}
+.men-button {
+	font-family: "Faustina", serif;
+	background-color: #000000;
+	font-size: 35px;
+	border-radius: 243px;
+	padding: 24px 70px;
+}
+main section div a {
 	text-decoration: none;
-}
-main section div a:hover {
-	background-color: #707070;
-}
-.button a {
-	padding: 24px 60px;
+	color: #fafafa;
 }
 
-.button {
-	display: grid;
-	grid-column-gap: 340px;
-	grid-template-columns: 1px;
-	grid-template-rows: 1px;
-	grid-template-areas: "Men Woman";
+main section div:hover {
+	background-color: #707070;
 }
 
 /* Mobile version */
-@media (max-width: 900px) {
-	.top-header-container {
-		border: #707070 solid;
-		padding: 30px 0px;
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		background-color: #f3f0ec;
-	}
-	.nav-0 /* Logo */ {
-		border: #000000 solid;
-		margin: auto;
-		order: 1;
-	}
-
-	.nav-1 /* Contact us */ {
-		border: #000000 solid;
-		text-transform: uppercase;
-		margin: auto;
-		order: 5;
-	}
-
-	header div a:hover {
-		text-decoration-line: underline;
-		color: #707070;
-	}
-	.nav-2 /* About us */ {
-		border: #000000 solid;
-		text-transform: uppercase;
-		margin: auto;
-		order: 4;
-	}
-	.nav-3 /* Search box */ {
-		border: #000000 solid;
-		margin: auto;
-		order: 3;
-	}
-
-	.nav-4 /* Icon Section in Nav */ {
-		border: #000000 solid;
-		margin: auto;
-		order: 2;
-	}
-	form input {
-		max-width: 300px;
-		max-height: 25px;
-		text-align: center;
-		border-radius: 100px;
-	}
-
-	/* Positioning of Nav section*/
-	header div img /* Logo size */ {
-		max-width: 75px;
-	}
-
-	header div a {
-		text-align: center;
-	}
-}
