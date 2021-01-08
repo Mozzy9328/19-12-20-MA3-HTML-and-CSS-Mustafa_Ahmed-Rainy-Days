@@ -9,12 +9,14 @@
 h1 {
 	margin: 0 auto;
 	text-align: center;
-	font-size: 150px;
+	font-family: sans-serif;
+	font-size: 130px;
 }
 
 h2 {
 	margin: 0 auto;
 	text-align: center;
+	font-family: sans-serif;
 	font-size: 40px;
 }
 
@@ -32,14 +34,13 @@ header div a {
 	align-items: center;
 	flex-wrap: nowrap;
 	margin: 0 auto;
+	padding: 25px 0px 0px 0px;
 }
 .nav-0 /* Logo */ {
-	border: #000000 solid;
 	order: 1;
 }
 
 .nav-1 /* Contact us */ {
-	border: #000000 solid;
 	order: 2;
 	text-transform: uppercase;
 }
@@ -49,29 +50,30 @@ header div a:hover {
 	color: #707070;
 }
 .nav-2 /* About us */ {
-	border: #000000 solid;
 	text-transform: uppercase;
 	order: 4;
 }
 .nav-3 /* Search box */ {
-	border: #000000 solid;
 	order: 3;
 }
 
 .nav-4 /* Icon Section in Nav */ {
-	border: #000000 solid;
+	font-size: 12px;
+	word-spacing: 15px;
 	order: 5;
 }
-form input {
+/* Search Section*/
+div input {
 	min-width: 350px;
-	max-height: 25px;
+	min-height: 30px;
 	text-align: center;
 	border-radius: 100px;
+	background-color: rgba(220, 220, 220, 0.1);
 }
 
 /* Positioning of Nav section*/
 header div img /* Logo size */ {
-	width: 100px;
+	width: 130px;
 }
 
 header div a {
@@ -91,12 +93,11 @@ body {
 	width: 100vw;
 }
 
-/* FIX THIS ASAP */
 /* Main section Button */
 
 .second-container {
 	position: relative;
-	top: 100px;
+	top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -104,7 +105,7 @@ body {
 }
 .third-container {
 	position: relative;
-	top: 200px;
+	top: 150px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -130,8 +131,85 @@ main section div a {
 	color: #fafafa;
 }
 
-main section div:hover {
+.men-button:hover {
+	background-color: #707070;
+}
+.woman-button:hover {
 	background-color: #707070;
 }
 
-/* Mobile version */
+/* Mobile version
+Animations for Footer
+Create Footer */
+
+/* CONTACT US.html */
+
+/* The format of the sub nav*/
+li {
+	display: inline-block;
+	padding-top: 20px;
+}
+/* Sub nav*/
+li a {
+	font-style: italic;
+	margin: 0px 10px 0px 0px;
+	color: #000000;
+	text-decoration: none;
+}
+/* "Home and >" sub navigation*/
+
+ul li:nth-child(1) {
+	margin: 0px 0px 0px 50px;
+	font-weight: bold;
+}
+/* "Current" sub Navigation*/
+ul li:nth-child(2) {
+	margin: 0px 0px 0px 5px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Contact information section*/
+.fourth-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: baseline;
+}
+
+form input {
+	min-width: 350px;
+	min-height: 30px;
+	text-align: center;
+	background-color: rgba(220, 220, 220, 0.582);
+}
+/* Heading Text*/
+.contact-info h1 {
+	font-size: 40px;
+}
+/* Child container*/
+.contact-info {
+	width: 50%;
+	height: 100%;
+	font-size: 20px;
+	border: solid #000000;
+}
+
+/* CONTACT US Form section*/
+
+/* Heading Text*/
+.contact-us h1 {
+	font-size: 40px;
+}
+
+.contact-us {
+	height: 100%;
+	width: 50%;
+	border: solid #000000;
+}
+
+textarea {
+	width: 350px;
+	height: 140px;
+	background-color: rgba(220, 220, 220, 0.582);
+}
