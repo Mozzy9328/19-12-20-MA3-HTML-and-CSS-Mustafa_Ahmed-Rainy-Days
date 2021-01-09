@@ -55,25 +55,67 @@
 	</header>
 	<main class="fourth-container">
 		<section class="contact-info">
-			<div><h1>Contact Information</h1></div>
-			<div><p>Phone: +47 464 19 942</p></div>
-			<div><p>Address: Hekkeveien 4, 0572 Oslo</p></div>
-			<div><p>E-mail: rainydays&#64;support.com</p></div>
+			<header>
+				<h1>Contact Information</h1>
+			</header>
+			<div class="p1">
+				<p>Phone:</p>
+				<p>+47 464 19 942</p>
+			</div>
+			<div class="p1">
+				<p>Address:</p>
+				<p>Hekkeveien 4, 0572 Oslo</p>
+			</div>
+			<div class="p1">
+				<p>E-mail:</p>
+				<p>rainydays&#64;support.com</p>
+			</div>
+			<div class="location-map">
+				<img src="Images/Map.jpg" />
+			</div>
+			<div class="social-media">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-pinterest"></i>
+			</div>
 		</section>
 		<section class="contact-us">
 			<h1>Contact Us</h1>
-			<form>
-				<div>
-					<input type="text" name="fullname" placeholder="Full Name" />
+			<form action="index.html" method="POST">
+				<div class="form1">
+					<input
+						type="text"
+						id="fullname"
+						name="fullname"
+						placeholder="Full Name"
+					/>
 				</div>
-				<div>
-					<input type="email" name="Email" placeholder="E-mail Address" />
+				<div class="form1">
+					<input
+						type="email"
+						id="Email"
+						name="Email"
+						placeholder="E-mail Address"
+					/>
 				</div>
-				<div>
-					<input type="text" name="topic" placeholder="What is this about?" />
+				<div class="form1">
+					<input
+						type="text"
+						id="subject"
+						name="subject"
+						placeholder="What is this about?"
+					/>
 				</div>
-				<div>
-					<textarea placeholder="Tell us what you think"> </textarea>
+				<div class="form1">
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Tell us what you think.."
+					></textarea>
+				</div>
+				<div class="form1">
+					<input type="submit" id="submit" name="Submit" value="Send" />
 				</div>
 			</form>
 		</section>
