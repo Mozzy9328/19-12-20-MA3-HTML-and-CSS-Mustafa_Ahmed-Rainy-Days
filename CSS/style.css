@@ -142,6 +142,24 @@ main section div a {
 	background-color: #707070;
 }
 
+#index-footer {
+	position: relative;
+	text-align: center;
+	padding: 1px 0px;
+	top: 50vh;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	padding: 1px 0px;
+	top: 20vh;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
 /* Mobile version
 	Animations for Footer
 	Create Footer */
@@ -311,7 +329,7 @@ form input {
 	width: 30%;
 }
 
-/* CONTACT US Form section*/
+/* CONTACT US FORM SECTION*/
 
 /* Heading Text*/
 .contact-us h1 {
@@ -364,7 +382,7 @@ main form {
 
 /* To remove the map*/
 @media (max-width: 1249px) {
-	main div img {
+	#google-map {
 		display: none;
 	}
 	.location-map {
@@ -526,20 +544,23 @@ main form {
 #size,
 #price,
 #color {
-	width: 100px;
+	width: 15%;
 	border-radius: 105px;
 	padding: 5px 10px;
 	background-color: rgba(225, 225, 225, 0.308);
+	letter-spacing: 1.5px;
 	font-weight: bold;
 }
 
-#price {
-	letter-spacing: 2px;
-}
 /* Image size for jackets */
-main div img:not(#google-map) {
+.jacket1 img,
+.jacket2 img,
+.jacket3 img,
+.jacket4 img,
+.jacket5 img,
+.jacket6 img {
 	max-width: 350px;
-	height: 300px;
+	height: 350px;
 }
 
 .jacket-list-container {
@@ -579,7 +600,7 @@ main div img:not(#google-map) {
 
 #information {
 	position: absolute;
-	top: 250px;
+	top: 300px;
 	width: 100%;
 	background-color: rgba(63, 57, 57, 0.747);
 	color: rgb(225, 225, 225);
@@ -593,4 +614,202 @@ main div img:not(#google-map) {
 	font-size: 10px;
 	top: 10px;
 	right: 14px;
+}
+
+@media (max-width: 951px) {
+	.navigation-for-jacket {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin: 50px auto;
+		max-width: 100%;
+	}
+
+	/* Image size for jackets */
+	.jacket1 img,
+	.jacket2 img,
+	.jacket3 img,
+	.jacket4 img,
+	.jacket5 img,
+	.jacket6 img {
+		max-width: 300px;
+		height: 300px;
+	}
+	#information {
+		position: absolute;
+		top: 250px;
+		width: 100%;
+		background-color: rgba(63, 57, 57, 0.747);
+		color: rgb(225, 225, 225);
+		text-align: center;
+		line-height: 26px;
+		letter-spacing: 1.5px;
+	}
+	#sort,
+	#brand,
+	#size,
+	#price,
+	#color {
+		width: 20%;
+		margin: 2px;
+		font-size: 10px;
+		border-radius: 105px;
+		padding: 5px 10px;
+		background-color: rgba(225, 225, 225, 0.308);
+		letter-spacing: 1.5px;
+		font-weight: bold;
+	}
+
+	.jacket-list-container {
+		display: grid;
+		grid-template-rows: 300px 300px;
+		justify-content: space-around;
+		row-gap: 150px;
+		grid-template-areas:
+			"Jacket1 Jacket2"
+			"Jacket3 Jacket4"
+			"Jacket5 Jacket6";
+	}
+}
+@media (max-width: 488px) {
+	.jacket-list-container {
+		display: grid;
+		grid-template-rows: 300px 300px;
+		justify-content: space-around;
+		row-gap: 150px;
+		grid-template-areas:
+			"Jacket1"
+			"Jacket2"
+			"Jacket3"
+			"Jacket4"
+			"Jacket5"
+			"Jacket6";
+	}
+}
+
+/* JACKET INFORMATION SECTION */
+
+/* The whole page */
+.jacket-information-container {
+	display: grid;
+	grid-template-areas:
+		"jacket-info inspiration"
+		"jacket-info inspiration";
+	background-color: rgba(225, 225, 225, 0.384);
+	margin: 60px;
+	border: 1px solid red;
+}
+
+.jacket-image-section {
+	grid-area: jacket-info;
+}
+
+.jacket-information-section {
+	grid-area: inspiration;
+}
+/* Jacket image section*/
+.jacket-image-section {
+	display: grid;
+	grid-template-columns: 110px 500px;
+	grid-template-rows: 240px;
+	column-gap: 20px;
+	grid-template-areas:
+		"Rainy-Jones1 Rainy-Jones3"
+		"Rainy-Jones2 Rainy-Jones3";
+}
+
+.rainy-jones1 {
+	grid-area: Rainy-Jones1;
+	border: 3px solid rgb(225, 0, 0);
+	max-width: 100px;
+	height: 120px;
+}
+.rainy-jones2 {
+	grid-area: Rainy-Jones2;
+}
+.rainy-jones3 {
+	grid-area: Rainy-Jones3;
+}
+
+#small-size img {
+	max-width: 100px;
+	height: 120px;
+}
+
+#large-size img {
+	max-width: 500px;
+	height: 600px;
+}
+
+/* Jacket information section*/
+
+.jacket-information-section {
+	display: grid;
+	grid-template-areas:
+		"information "
+		"options ";
+}
+
+.jis-child-1 {
+	grid-area: information;
+	text-align: center;
+	align-self: center;
+	margin: 0px 50px;
+	letter-spacing: 1.5px;
+}
+
+.jis-child-1 h2,
+.jis-child-1 h3:only-of-type {
+	line-height: 50px;
+}
+
+.jis-child-2 {
+	grid-area: options;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.select1,
+.select2 {
+	display: flex;
+	padding: 0px 0px 25px 0px;
+	width: 400px;
+	align-items: center;
+	flex-direction: column;
+	line-height: 50px;
+}
+
+.select1 label,
+.select2 label {
+	text-align: start;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#jacket-size,
+#jacket-color {
+	width: 30%;
+}
+
+#add-to-bag {
+	width: 130px;
+	margin-top: 50px;
+	padding: 10px;
+	background-color: #000;
+	color: #fafafa;
+	font-size: 20px;
+	border-radius: 100px;
+}
+/* Inspiration section */
+
+.inspiration-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(225, 225, 225, 0.384);
+	padding: 40px 0px;
+	margin: 0 auto;
 }
