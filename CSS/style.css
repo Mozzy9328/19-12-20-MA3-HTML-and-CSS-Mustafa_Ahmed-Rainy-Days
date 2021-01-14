@@ -784,7 +784,7 @@ main form {
 .select1 label,
 .select2 label {
 	text-align: start;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: bold;
 }
 
@@ -806,10 +806,21 @@ main form {
 
 .inspiration-section {
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgba(225, 225, 225, 0.384);
 	padding: 40px 0px;
 	margin: 0 auto;
+}
+
+#insp-text {
+	position: absolute;
+	top: 150px;
+	margin: 0 auto;
+	width: 10%;
+	background-color: rgba(63, 57, 57, 0.747);
+	color: rgb(225, 225, 225);
+	text-align: center;
 }
