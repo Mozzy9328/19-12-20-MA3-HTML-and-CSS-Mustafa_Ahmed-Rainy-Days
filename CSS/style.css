@@ -166,7 +166,7 @@ main section div a {
 
 @media (max-width: 1109px) {
 	/* Header Section */
-	h1 {
+	.second-container h1 {
 		margin: 60px 0px;
 		text-align: center;
 		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -736,7 +736,7 @@ main form {
 }
 /* Sizing of images*/
 .rainy-jones1 img,
-.rainy-jones2 img{
+.rainy-jones2 img {
 	max-width: 100%;
 	height: auto;
 }
@@ -793,10 +793,9 @@ main form {
 #add-to-bag {
 	max-width: 130px;
 	margin-top: 50px;
-	padding: 10px;
 	background-color: #000;
 	color: #fafafa;
-	font-size: 20px;
+	font-size: 18px;
 	border-radius: 100px;
 }
 /* Inspiration section */
@@ -808,16 +807,17 @@ main form {
 	justify-content: space-around;
 	align-items: center;
 	max-width: 50%;
-	background-color: rgba(225, 225, 225, 0.384);
 	padding: 40px 0px;
 	margin: 0 auto;
 }
 
 #insp-text {
 	position: absolute;
-	flex-wrap: wrap;
-	top: 140px;
-	background-color: rgba(63, 57, 57, 0.747);
+	flex-wrap: nowrap;
+	top: 250px;
+	background-color: rgba(63, 57, 57, 0.527);
+	border-radius: 100px;
+	font-style: italic;
 	color: rgb(225, 225, 225);
 	text-align: center;
 }
@@ -826,3 +826,177 @@ main form {
 	max-width: 100%;
 	height: auto;
 	border-radius: 100px;
+}
+
+/* Media querie for jacket info section*/
+
+/* CHECK OUT PAGE */
+.container-for-checkout {
+	display: flex;
+	border: 1px solid;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: rgba(225, 225, 225, 0.384);
+	margin: 8% auto;
+	max-width: 80%;
+}
+/* Left section of the checkout page */
+.left-checkout {
+	display: grid;
+	max-width: 66%;
+	border-right: solid 1px;
+	grid-template-areas:
+		"top-checkout-section"
+		"middle-checkout-section"
+		"end-checkout-section";
+}
+
+/* The top section of the left aside */
+
+.top-checkout-section {
+	grid-area: top-checkout-section;
+	margin-bottom: 5%;
+}
+.top-checkout-section h1 {
+	font-family: "faustina", sans-serif;
+	font-size: 25px;
+	text-align: start;
+}
+
+/* The middle section of the left aside */
+
+.middle-checkout-section {
+	grid-area: middle-checkout-section;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.middle1 {
+	flex: 1;
+	max-width: 31%;
+	height: 88%;
+}
+.middle1 img {
+	max-width: 100%;
+}
+/* text section*/
+.middle2 {
+	flex: 2;
+	align-self: baseline;
+	max-width: 55%;
+	margin: 0 auto;
+}
+
+.middle2 h2 {
+	text-align: start;
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.middle2 h3 {
+	font-weight: normal;
+	line-height: 25px;
+	margin-bottom: 7px;
+}
+.middle2 p {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-right: auto;
+}
+#bold {
+	font-weight: bold;
+}
+/* text resize */
+#resize-p-ckp {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-right: 76%;
+}
+/* icon section */
+.middle3 {
+	flex: 1;
+	max-width: 10%;
+}
+
+/* The end section of the left aside */
+
+.end-checkout-section {
+	grid-area: end-checkout-section;
+	text-align: end;
+	font-size: 25px;
+	margin-right: 8%;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+/* Right section of the checkout page */
+
+.right-checkout {
+	display: grid;
+	margin: 0 auto;
+	grid-template-areas:
+		"top-rc-s top-rc-s"
+		"m1-rc-s m2-rc-s"
+		"e1-rc-s e1-rc-s"
+		"e2-rc-s e2-rc-s";
+}
+/* The top section */
+
+.top-rightcheckout-section {
+	grid-area: top-rc-s;
+}
+
+.top-rightcheckout-section h1 {
+	font-family: "faustina", sans-serif;
+	font-size: 25px;
+	margin-bottom: -4%;
+}
+
+/* The middle-left section */
+
+.middle1-rightcheckout-section {
+	grid-area: m1-rc-s;
+	font-size: 20px;
+	font-weight: bold;
+	align-self: center;
+	line-height: 25px;
+	width: 130px;
+}
+
+/* The middle-right section */
+
+.middle2-rightcheckout-section {
+	grid-area: m2-rc-s;
+	justify-self: flex-end;
+	align-self: center;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+/* The top end section */
+
+.end1-rightcheckout-section {
+	grid-area: e1-rc-s;
+	justify-self: center;
+	align-self: center;
+	margin: 0 auto;
+}
+
+#Checkout {
+	padding: 15px 35px;
+	border-radius: 100px;
+	background-color: #000000;
+	color: #fafafa;
+	font-family: "faustina", sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/* The lower end section of the right aside */
+
+.end2-rightcheckout-section {
+	grid-area: e2-rc-s;
+	align-self: center;
+	justify-self: center;
+	font-size: larger;
+}
