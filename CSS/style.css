@@ -174,7 +174,7 @@ main section div a {
 		font-size: 80px;
 	}
 
-	h2 {
+	.second-container h2 {
 		margin: -50px 0px;
 		text-align: center;
 		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -694,26 +694,27 @@ main form {
 /* The whole page */
 .jacket-information-container {
 	display: grid;
+	grid-template-columns: 59% 41%;
 	grid-template-areas:
-		"jacket-info inspiration"
-		"jacket-info inspiration";
+		"jacket-image jacket-info"
+		"jacket-image jacket-info";
 	background-color: rgba(225, 225, 225, 0.384);
+	max-width: 90%;
 	margin: 60px;
-	border: 1px solid red;
 }
 
 .jacket-image-section {
-	grid-area: jacket-info;
+	grid-area: jacket-image;
 }
 
 .jacket-information-section {
-	grid-area: inspiration;
+	grid-area: jacket-info;
 }
 /* Jacket image section*/
 .jacket-image-section {
 	display: grid;
-	grid-template-columns: 110px 500px;
-	grid-template-rows: 240px;
+	grid-template-columns: 20% 76%;
+	grid-template-rows: 35%;
 	column-gap: 20px;
 	grid-template-areas:
 		"Rainy-Jones1 Rainy-Jones3"
@@ -730,17 +731,18 @@ main form {
 	grid-area: Rainy-Jones2;
 }
 .rainy-jones3 {
+	max-width: 73%;
 	grid-area: Rainy-Jones3;
 }
-
-#small-size img {
-	max-width: 100px;
-	height: 120px;
+/* Sizing of images*/
+.rainy-jones1 img,
+.rainy-jones2 img{
+	max-width: 100%;
+	height: auto;
 }
-
-#large-size img {
-	max-width: 500px;
-	height: 600px;
+.rainy-jones3 img {
+	max-width: 150%;
+	height: auto;
 }
 
 /* Jacket information section*/
@@ -775,7 +777,7 @@ main form {
 .select2 {
 	display: flex;
 	padding: 0px 0px 25px 0px;
-	width: 400px;
+	max-width: 100%;
 	align-items: center;
 	flex-direction: column;
 	line-height: 50px;
@@ -788,13 +790,8 @@ main form {
 	font-weight: bold;
 }
 
-#jacket-size,
-#jacket-color {
-	width: 30%;
-}
-
 #add-to-bag {
-	width: 130px;
+	max-width: 130px;
 	margin-top: 50px;
 	padding: 10px;
 	background-color: #000;
@@ -810,6 +807,7 @@ main form {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	max-width: 50%;
 	background-color: rgba(225, 225, 225, 0.384);
 	padding: 40px 0px;
 	margin: 0 auto;
@@ -817,10 +815,14 @@ main form {
 
 #insp-text {
 	position: absolute;
-	top: 150px;
-	margin: 0 auto;
-	width: 10%;
+	flex-wrap: wrap;
+	top: 140px;
 	background-color: rgba(63, 57, 57, 0.747);
 	color: rgb(225, 225, 225);
 	text-align: center;
 }
+
+#insp-size img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 100px;
