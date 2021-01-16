@@ -11,136 +11,140 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-</html>
-<body>
-	<header>
-		<section class="top-header-container">
-			<div class="nav-0">
-				<a href="index.html"><img src="Images/Transparent Logo.png" /></a>
-			</div>
-			<div class="nav-1">
-				<a href="contact.html">Contact Us</a>
-			</div>
-			<div class="nav-2">
-				<a href="about.html">About Us</a>
-			</div>
-			<div class="nav-3">
-				<input
-					type="text"
-					id="Search"
-					placeholder="Search for items, brands and inspiration..."
-				/>
-			</div>
-			<div class="nav-4">
-				<icon>
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
-					<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
-					<i class="fas fa-shopping-cart fa-2x fa-fw"></i>
-				</icon>
-			</div>
-		</section>
-	</header>
-	<main>
-		<section class="navigation-for-jacket">
-			<select for="sort" name="sort" id="sort">
-				<option value="sort">Sort</option>
-				<option value="jacket">Jacket</option>
-				<option value="shoes">Shoes</option>
-				<option value="Jumper">Jumper</option>
-				<option value="Accessories">Accessories</option>
-			</select>
-			<select for="brand" name="brand" id="brand">
-				<option value="brand">Brand</option>
-				<option value="canada-goose">Canada Goose</option>
-				<option value="leggo">Leggo</option>
-				<option value="helly-hansen">Helly Hansen</option>
-				<option value="patagonia">Patagonia</option>
-			</select>
-			<select for="size" name="size" id="size">
-				<option value="size">Size</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-			</select>
-			<select for="color" name="color" id="color">
-				<option value="color">Color</option>
-				<option value="yellow">Yellow</option>
-				<option value="blue">Blue</option>
-				<option value="black">Black</option>
-				<option value="Green">green</option>
-			</select>
-			<select for="price" name="price" id="price">
-				<option value="price0">Price</option>
-				<option value="price1">$10-$40</option>
-				<option value="price2">$41-$100</option>
-				<option value="price3">$100 ></option>
-			</select>
-		</section>
-		<section class="jacket-list-container">
-			<div class="jacket1">
-				<img src="images/Jacket 1.jpg" />
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+	<body>
+		<header>
+			<section class="top-header-container">
+				<div class="nav-0">
+					<a href="index.html"><img src="Images/Transparent Logo.png" /></a>
 				</div>
-				<div id="information">
-					<p>Jacket by Rainy Days</p>
-					<p>Price: $999.00</p>
+				<div class="nav-1">
+					<a href="contact.html" id="nav-fix">Contact Us</a>
 				</div>
-			</div>
-			<div class="jacket2">
-				<a href="jacket-information.html"><img src="images/Jacket 2.jpg" /></a>
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+				<div class="nav-2">
+					<a href="about.html" id="nav-fix">About Us</a>
 				</div>
-				<div id="information">
-					<p>Rainy Jones 2</p>
-					<p>Price: $1299.00</p>
+				<div class="nav-3">
+					<input
+						type="text"
+						id="Search"
+						placeholder="Search for items, brands and inspiration..."
+					/>
 				</div>
-			</div>
-			<div class="jacket3">
-				<img src="images/Jacket 3.jpg" />
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+				<div class="nav-4">
+					<icon>
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+						<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
+						<a href="checkout-page.html"
+							><i class="fas fa-shopping-cart fa-2x fa-fw"></i
+						></a>
+					</icon>
 				</div>
-				<div id="information">
-					<p>Jacket by Rainy Days</p>
-					<p>Price: $599.00</p>
+			</section>
+		</header>
+		<main>
+			<section class="navigation-for-jacket">
+				<select for="sort" name="sort" id="sort">
+					<option value="sort">Sort</option>
+					<option value="jacket">Jacket</option>
+					<option value="shoes">Shoes</option>
+					<option value="Jumper">Jumper</option>
+					<option value="Accessories">Accessories</option>
+				</select>
+				<select for="brand" name="brand" id="brand">
+					<option value="brand">Brand</option>
+					<option value="canada-goose">Canada Goose</option>
+					<option value="leggo">Leggo</option>
+					<option value="helly-hansen">Helly Hansen</option>
+					<option value="patagonia">Patagonia</option>
+				</select>
+				<select for="size" name="size" id="size">
+					<option value="size">Size</option>
+					<option value="s">S</option>
+					<option value="m">M</option>
+					<option value="l">L</option>
+					<option value="xl">XL</option>
+				</select>
+				<select for="color" name="color" id="color">
+					<option value="color">Color</option>
+					<option value="yellow">Yellow</option>
+					<option value="blue">Blue</option>
+					<option value="black">Black</option>
+					<option value="Green">green</option>
+				</select>
+				<select for="price" name="price" id="price">
+					<option value="price0">Price</option>
+					<option value="price1">$10-$40</option>
+					<option value="price2">$41-$100</option>
+					<option value="price3">$100 ></option>
+				</select>
+			</section>
+			<section class="jacket-list-container">
+				<div class="jacket1">
+					<img src="images/Jacket 1.jpg" />
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Jacket by Rainy Days</p>
+						<p>Price: $999.00</p>
+					</div>
 				</div>
-			</div>
-			<div class="jacket4">
-				<img src="images/Jacket 4.jpg" />
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+				<div class="jacket2">
+					<a href="jacket-information.html"
+						><img src="images/Jacket 2.jpg"
+					/></a>
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Rainy Jones 2</p>
+						<p>Price: $1299.00</p>
+					</div>
 				</div>
-				<div id="information">
-					<p>Jacket by Rainy Days</p>
-					<p>Price: $699.00</p>
+				<div class="jacket3">
+					<img src="images/Jacket 3.jpg" />
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Jacket by Rainy Days</p>
+						<p>Price: $599.00</p>
+					</div>
 				</div>
-			</div>
-			<div class="jacket5">
-				<img src="images/Jacket 5.jpg" />
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+				<div class="jacket4">
+					<img src="images/Jacket 4.jpg" />
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Jacket by Rainy Days</p>
+						<p>Price: $699.00</p>
+					</div>
 				</div>
-				<div id="information">
-					<p>Jacket by Rainy Days</p>
-					<p>Price: $1099.00</p>
+				<div class="jacket5">
+					<img src="images/Jacket 5.jpg" />
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Jacket by Rainy Days</p>
+						<p>Price: $1099.00</p>
+					</div>
 				</div>
-			</div>
-			<div class="jacket6">
-				<img src="images/Jacket 6.jpg" />
-				<div id="heart-icon">
-					<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+				<div class="jacket6">
+					<img src="images/Jacket 6.jpg" />
+					<div id="heart-icon">
+						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
+					</div>
+					<div id="information">
+						<p>Jacket by Rainy Days</p>
+						<p>Price: $499.00</p>
+					</div>
 				</div>
-				<div id="information">
-					<p>Jacket by Rainy Days</p>
-					<p>Price: $499.00</p>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
+			</section>
+		</main>
+	</body>
+	<footer class="men-page-footer">
 		<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
 	</footer>
-</body>
+</html>
