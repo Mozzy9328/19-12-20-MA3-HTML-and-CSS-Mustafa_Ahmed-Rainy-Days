@@ -113,34 +113,31 @@ body {
 /* Main section Button */
 
 .second-container {
-	position: relative;
-	top: 30px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 100vw;
 }
 .third-container {
-	position: relative;
-	top: 150px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 110px;
+	margin: 100px auto;
 }
 
 .woman-button {
 	font-family: "Faustina", serif;
 	background-color: #000000;
 	font-size: 35px;
-	border-radius: 243px;
-	padding: 24px 40px;
+	border-radius: 100px;
+	padding: 24px 43px;
+	text-align: center;
 }
 .men-button {
 	font-family: "Faustina", serif;
 	background-color: #000000;
 	font-size: 35px;
-	border-radius: 243px;
+	border-radius: 100px;
 	padding: 24px 70px;
 }
 main section div a {
@@ -162,6 +159,10 @@ main section div a {
 	top: 40%;
 	font-weight: bold;
 	margin: 0 auto;
+}
+
+i:hover {
+	color: #707070;
 }
 
 @media (max-width: 1109px) {
@@ -233,6 +234,9 @@ main section div a {
 
 	header div a:hover {
 		text-decoration-line: underline;
+		color: #707070;
+	}
+	i:hover {
 		color: #707070;
 	}
 }
@@ -1013,7 +1017,8 @@ textarea {
 	border: none;
 }
 
-#Checkout:hover {
+#Checkout:hover,
+#Continue-Shopping:hover {
 	background-color: #707070;
 }
 
