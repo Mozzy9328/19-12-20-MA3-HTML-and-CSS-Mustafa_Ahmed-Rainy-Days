@@ -156,7 +156,7 @@ main section div a {
 	position: relative;
 	text-align: center;
 	padding: 1px 0px;
-	top: 40%;
+	top: 15%;
 	font-weight: bold;
 	margin: 0 auto;
 }
@@ -240,7 +240,7 @@ i:hover {
 		color: #707070;
 	}
 }
-/* 						CONTACT US						 */
+/* 						CONTACT US PAGE					 */
 
 /* Contact information section*/
 .fourth-container {
@@ -309,7 +309,7 @@ form input {
 	align-self: center;
 }
 
-/* CONTACT US FORM SECTION*/
+/* 						CONTACT US FORM SECTION							*/
 
 /* Heading Text*/
 .contact-us h1 {
@@ -390,7 +390,7 @@ textarea {
 		width: 30%;
 	}
 }
-/* ABOUT US SECTION */
+/*						 ABOUT US SECTION 							*/
 .fifth-container {
 	display: grid;
 	justify-content: space-around;
@@ -440,7 +440,6 @@ textarea {
 	align-self: flex-end;
 }
 
-/* MAKE ANIMATION SMALL TO LARGE (Same thing on media) */
 .about-us-paragraph h3 {
 	color: #090e52;
 	font-size: 30px;
@@ -505,7 +504,7 @@ textarea {
 		font-weight: bold;
 	}
 }
-/* MEN SECTION JACKETS */
+/* 						MEN/WOMAN SECTION JACKETS 				*/
 
 .navigation-for-jacket {
 	display: flex;
@@ -677,7 +676,7 @@ textarea {
 	}
 }
 
-/* JACKET INFORMATION SECTION */
+/* 							JACKET INFORMATION SECTION 							*/
 
 /* The whole page */
 .jacket-information-container {
@@ -724,6 +723,8 @@ textarea {
 }
 .rainy-jones2 {
 	grid-area: Rainy-Jones2;
+	max-width: 100px;
+	height: 120px;
 }
 .rainy-jones3 {
 	max-width: 73%;
@@ -731,7 +732,6 @@ textarea {
 }
 /* Sizing of images*/
 .rainy-jones1 img {
-	border: 3px solid rgb(225, 0, 0);
 	max-width: 100%;
 	height: auto;
 }
@@ -817,18 +817,20 @@ textarea {
 	max-width: 59%;
 	margin: 0 auto;
 	flex-grow: 1;
+	align-self: flex-end;
 }
 
 #insp-text {
 	/* fIX THIS */
-	flex-wrap: nowrap;
-	top: 250px;
 	background-color: rgba(63, 57, 57, 0.8);
 	padding: 1%;
 	border-radius: 100px;
 	font-style: italic;
 	color: rgb(225, 225, 225);
 	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 14px;
 }
 
 #insp-size {
@@ -846,7 +848,42 @@ textarea {
 	margin: 0 auto;
 }
 
-/* Media querie for jacket info section*/
+@media (max-width: 1244px) {
+	.jacket-information-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.ji-left-aside {
+		display: grid;
+		border: 1px solid;
+		grid-template-areas:
+			"jacket-image"
+			"jacket-info";
+		background-color: rgba(225, 225, 225, 0.6);
+		max-width: 100%;
+		padding: 20px;
+		margin: 60px auto;
+	}
+	.jacket-image-section {
+		display: grid;
+		grid-template-columns: 19% 73%;
+		column-gap: 20px;
+		justify-content: end;
+		grid-template-areas:
+			"Rainy-Jones1 Rainy-Jones3"
+			"Rainy-Jones2 Rainy-Jones3";
+	}
+	.ji-right-aside {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		margin: 60px 0px;
+		border: 1px solid;
+		background-color: rgba(220, 220, 220, 0.6);
+	}
+}
 
 /* 					CHECK OUT PAGE 						*/
 
@@ -1040,6 +1077,26 @@ textarea {
 	margin: 0 auto;
 }
 
+@media (max-width: 650px) {
+	.middle-checkout-section {
+		flex-direction: column;
+		margin: 0%;
+	}
+
+	.middle1 {
+		align-self: center;
+	}
+	.middle2 {
+		align-self: flex-end;
+	}
+	.middle3 {
+		display: none;
+	}
+	.end-checkout-section {
+		text-align: center;
+	}
+}
+
 /* 						CHECKOUT SUCCESS PAGE			 */
 
 #h1-checkout-success {
@@ -1092,4 +1149,51 @@ textarea {
 	top: -2%;
 	font-weight: bold;
 	margin: 0 auto;
+}
+
+/* Animations 1*/
+
+.jacket1 img,
+.jacket2 img,
+.jacket3 img,
+.jacket4 img,
+.jacket5 img,
+.jacket6 img {
+	transition-property: flip-image;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
+.jacket1 img:hover,
+.jacket2 img:hover,
+.jacket3 img:hover,
+.jacket4 img:hover,
+.jacket5 img:hover,
+.jacket6 img:hover {
+	transform: scaleX(-1);
+}
+
+/* Animations 2*/
+
+.rainy-jones1,
+.rainy-jones2 {
+	transition-property: border-red;
+	transition-duration: 0s;
+	width: 95px;
+}
+
+.rainy-jones1:hover,
+.rainy-jones2:hover {
+	border: 3px solid #ff0000;
+}
+
+/* Animation 3 */
+.rainy-jones3 {
+	transition-property: flip-image2;
+}
+
+.rainy-jones2:hover ~ .rainy-jones3 {
+	transform: scaleX(-1);
+	position: relative;
+	left: 122px;
 }
