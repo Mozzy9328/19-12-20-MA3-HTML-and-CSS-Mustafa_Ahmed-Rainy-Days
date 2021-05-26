@@ -191,28 +191,28 @@ body {
 	margin: 70px auto;
 }
 
-.woman-button {
+.button {
 	font-family: "Faustina", serif;
 	background-color: #000000;
 	font-size: 35px;
 	border-radius: 100px;
 	padding: 24px 43px;
 	text-align: center;
-}
-.men-button {
-	font-family: "Faustina", serif;
-	background-color: #000000;
-	font-size: 35px;
-	border-radius: 100px;
-	padding: 24px 70px;
-}
-main section div a {
-	text-decoration: none;
 	color: #fafafa;
 }
 
-.men-button:hover,
-.woman-button:hover {
+.back-button {
+	background-color: #000000;
+	border-radius: 100px;
+	width: 10%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fafafa;
+}
+
+.button:hover,
+.back-button:hover {
 	background-color: #635d5d;
 }
 
