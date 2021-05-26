@@ -29,33 +29,45 @@
 	</head>
 	<body>
 		<header>
-			<section class="top-header-container">
-				<div class="nav-0">
-					<img src="Images/Transparent Logo.png" />
-				</div>
-				<div class="nav-1">
-					<a href="contact.html" id="nav-fix">Contact Us</a>
-				</div>
-				<div class="nav-2">
-					<a href="about.html" id="nav-fix">About Us</a>
-				</div>
-				<div class="nav-3">
-					<input
-						type="text"
-						id="Search"
-						placeholder="Search for items, brands and inspiration..."
-					/>
-				</div>
-				<div class="nav-4">
-					<icon>
-						<i class="fas fa-heart fa-2x fa-fw fa-fw"></i>
-						<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
-						<a href="checkout-page.html"
-							><i class="fas fa-shopping-cart fa-2x fa-fw"></i
-						></a>
-					</icon>
-				</div>
-			</section>
+			<nav>
+				<ul class="top-header-container">
+					<li class="nav-1" id="fix-image">
+						<img src="Images/Transparent Logo.png" />
+					</li>
+					<li class="text-nav">
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li class="text-nav">
+						<div class="dropdown">
+							<button class="dropbtn">Shopping</button>
+							<div id="mydropdown" class="dropdown-content">
+								<a href="men.html">Men</a>
+								<a href="woman.html">Woman</a>
+							</div>
+						</div>
+					</li>
+					<!-- <li class="nav-3">
+						<input
+							type="text"
+							id="Search"
+							placeholder="Search for items, brands and inspiration..."
+						/> -->
+					<li class="text-nav">
+						<a href="about.html">About Us</a>
+					</li>
+
+					</li>
+					<li class="nav-5">
+						<icon>
+							<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
+							<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
+							<a href="checkout-page.html"
+								><i class="fas fa-shopping-cart fa-2x fa-fw"></i
+							></a>
+						</icon>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<section class="second-container">
@@ -71,10 +83,9 @@
 				</div>
 			</section>
 		</main>
+		<footer class="index-footer">
+			<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
+		</footer>
 		<script src="js/script.js"></script>
-		<script src="js/script2.js"></script>
 	</body>
-	<footer class="index-footer">
-		<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
-	</footer>
 </html>

@@ -24,23 +24,15 @@ h2 {
 	font-size: 40px;
 }
 
-/* Icon nav color */
-header div a {
+a {
 	color: #000;
+	text-decoration: none;
 }
 
 #current {
 	color: #635d5d;
 	font-size: 24px;
 	font-weight: bold;
-	text-decoration: none;
-}
-/* nac color and font-size */
-#nav-fix {
-	color: #000;
-	font-size: 24px;
-	font-weight: bold;
-	text-emphasis: nowrap;
 	text-decoration: none;
 }
 .top-header-container {
@@ -51,49 +43,91 @@ header div a {
 	flex-wrap: nowrap;
 	margin: 0 auto;
 	padding: 25px 0px 0px 0px;
-}
-.nav-0 /* Logo */ {
-	order: 1;
+	list-style: none;
 }
 
-.nav-1 /* Contact us */ {
-	order: 2;
+.nav-1 img /* Logo */ {
+	width: 130px;
+}
+
+.text-nav /* Contact us */ {
 	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
 }
-
-header div a:hover {
+/* Hover Nav */
+.top-header-container a:hover,
+.dropbtn:hover {
 	text-decoration-line: underline;
 	color: #707070;
 }
-.nav-2 /* About us */ {
-	text-transform: uppercase;
-	order: 4;
-}
-.nav-3 /* Search box */ {
-	order: 3;
-}
+/* .nav-3 /* Search box  {
+	width: 100%;
+} */
 
-.nav-4 /* Icon Section in Nav */ {
+.nav-5 /* Icon Section in Nav */ {
 	font-size: 12px;
 	word-spacing: 15px;
-	order: 5;
 }
-/* Search Section*/
+/* 
+/* Search Section*
 header div input {
-	min-width: 350px;
+	min-width: 750px;
 	min-height: 30px;
 	text-align: center;
 	border-radius: 100px;
 	background-color: rgba(220, 220, 220, 0.1);
-}
+} */
 
-/* Positioning of Nav section*/
-header div img /* Logo size */ {
+/* Positioning of Nav section
+header div img /* Logo size  {
 	width: 130px;
 }
 
 header div a {
 	text-align: center;
+} */
+
+/* Javascript for the Nav */
+
+/* Dropdown button */
+.dropbtn {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* #mydropdown {
+	display: flex;
+	flex-direction: row;
+} */
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	margin: 5px;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.dropdown-content a:hover {
+	background-color: #635d5d;
+}
+
+.show {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 95%;
+	margin: 5% auto;
 }
 
 /* Main Section images */
