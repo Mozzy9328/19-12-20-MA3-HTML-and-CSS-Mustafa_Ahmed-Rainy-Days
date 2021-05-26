@@ -2,9 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Welcome to Rainy Days" />
+		<meta
+			name="description"
+			content="Search for items, brands and inspiration..."
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home | Rainy Days</title>
+		<title>Search Items | Rainy Days</title>
 		<link href="CSS/style.css" rel="stylesheet" />
 		<script
 			src="https://kit.fontawesome.com/82bcf3d6bd.js"
@@ -32,7 +35,7 @@
 			<nav>
 				<ul class="top-header-container">
 					<li class="nav-1" id="fix-image">
-						<img src="Images/Transparent Logo.png" />
+						<a href="index.html"> <img src="Images/Transparent Logo.png" /></a>
 					</li>
 					<li class="text-nav">
 						<a href="contact.html">Contact Us</a>
@@ -47,15 +50,13 @@
 						</div>
 					</li>
 					<li class="text-nav">
-						<a href="about.html">About Us</a>
-					</li>
-
+						<a href="about.html" id="current">About Us</a>
 					</li>
 					<li class="nav-5">
 						<div>
 							<a href="search.html">
-							<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
-						</a>
+								<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
+							</a>
 						</div>
 						<div>
 							<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
@@ -70,18 +71,16 @@
 			</nav>
 		</header>
 		<main>
-			<section class="second-container">
-				<h1>Rainy Days</h1>
-				<h2>Pushing the comfort zone</h2>
-			</section>
-			<section class="third-container">
-				<div>
-					<a href="men.html"><p class="men-button">MEN</p></a>
+			<div class="search-button">
+				<input
+					type="text"
+					id="search"
+					placeholder="Search for items, brands and inspiration..."
+				/>
+				<div class="search-icon">
+					<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
 				</div>
-				<div>
-					<a href="woman.html"><p class="woman-button">WOMAN</p></a>
-				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="index-footer">
 			<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
