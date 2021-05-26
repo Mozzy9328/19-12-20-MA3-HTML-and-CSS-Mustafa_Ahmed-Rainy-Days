@@ -73,8 +73,7 @@ a {
 /* Search Section */
 
 .search-button {
-	animation: open 2s;
-	position: relative;
+	animation: open 1s;
 	width: 85%;
 	margin: 10% auto;
 }
@@ -89,7 +88,7 @@ a {
 }
 
 #search {
-	width: 85%;
+	min-width: 85%;
 	padding: 30px 80px;
 	text-align: center;
 	border-radius: 100px;
@@ -102,6 +101,10 @@ a {
 #search::placeholder {
 	color: #fafafa;
 	font-size: 16px;
+}
+
+.search-container {
+	position: relative;
 }
 
 .search-icon {
@@ -257,54 +260,71 @@ i:hover {
 		text-emphasis: nowrap;
 		text-decoration: none;
 	}
-	.nav-0 {
-		grid-area: Logo;
-		grid-column: 1/6;
-		grid-row: 1/1;
-	}
-	.nav-1 {
-		grid-area: Contact us;
-		text-transform: uppercase;
-		grid-column: 1/3;
-		grid-row: 3/3;
-	}
-	.nav-2 {
-		grid-area: About us;
-		text-transform: uppercase;
-		grid-column: 3/6;
-		grid-row: 3/3;
-	}
-	.nav-3 {
-		grid-area: Search;
-		grid-column: 1/6;
-		grid-row: 2/2;
-	}
-	.nav-4 {
-		grid-area: Icons;
-		grid-column: 1/6;
-		grid-row: 4/4;
-		font-size: 12px;
-		word-spacing: 15px;
-	}
-
 	.top-header-container {
 		display: grid;
 		row-gap: 25px;
-		grid-template-rows: 100px;
-		grid-template-columns: 100px 100px 100px 100px;
-		justify-content: center;
+		grid-template-areas:
+			"Logo Logo"
+			"Contact-us About-us"
+			"Shopping Shopping"
+			"Icons Icons";
 		text-align: center;
 	}
 
-	header div a:hover {
+	.nav-1 {
+		grid-area: Logo;
+	}
+	#nav-2 {
+		grid-area: Contact-us;
+		text-transform: uppercase;
+	}
+	#nav-3 {
+		grid-area: Shopping;
+		text-transform: uppercase;
+	}
+	#nav-4 {
+		grid-area: About-us;
+	}
+	.nav-5 {
+		grid-area: Icons;
+		width: 25%;
+		margin: 10% auto;
+	}
+
+	/* Search Section */
+
+	/* #search {
+		max-width: 50%;
+		margin: 0 auto;
+	} */
+
+	/* .search-icon {
+		right: 1%;
+		top: 20px;
+	} */
+
+	/* header div a:hover {
 		text-decoration-line: underline;
 		color: #707070;
 	}
 	i:hover {
 		color: #707070;
-	}
+	} */
 }
-/* 						CONTACT US PAGE					 */
+/* 						
+
+
+
+
+
+CONTACT US PAGE				
+
+
+
+
+
+
+*/
 
 /* Contact information section*/
 .fourth-container {
@@ -454,7 +474,17 @@ textarea {
 		width: 30%;
 	}
 }
-/*						 ABOUT US SECTION 							*/
+
+/*			
+
+
+
+ ABOUT US SECTION 							
+ 
+ 
+ 
+ */
+
 .fifth-container {
 	display: grid;
 	justify-content: space-around;

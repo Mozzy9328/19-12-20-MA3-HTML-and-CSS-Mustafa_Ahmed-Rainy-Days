@@ -73,15 +73,21 @@ function activateSearch() {
 		</header>
 		<main>
 			<div class="search-button">
-				<input
-					type="text"
-					id="search"
-					placeholder="Search for items, brands and inspiration..."
-				/>
-				<div class="search-icon">
-					<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
-				</div>
+                <div class="search-container">
+				    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search for items, brands and inspiration..."
+                    />
+                    <div class="search-icon">
+                        <i class="fas fa-search fa-2x fa-fw fa-fw"></i>
+                    </div>
+                </div>
 			</div>
+
+            <div class="error-message">
+            <div>
+            
             <div> 
                 <a href="index.html">
                      <p class="back-button">Home Page</p>
@@ -100,4 +106,14 @@ searchIcon.addEventListener("click", activateSearch)
 
 // Search not working 
 
-const clickedSearch = document.querySelector(".s")
+const clickedSearch = document.querySelector(".search-icon")
+const error = document.querySelector(".error-message")
+
+function errorMessage(){
+    error.innerHTML += `
+    <p> The search function is not working, Please try again later </p>
+    `
+}
+
+clickedSearch.addEventListener("click", errorMessage)
+
