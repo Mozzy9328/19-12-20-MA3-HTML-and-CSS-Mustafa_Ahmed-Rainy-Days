@@ -38,10 +38,10 @@ function activateSearch() {
 					<li class="nav-1" id="fix-image">
 						<a href="index.html"> <img src="Images/Transparent Logo.png" /></a>
 					</li>
-					<li class="text-nav">
+					<li id="nav-2" class="text-nav">
 						<a href="contact.html">Contact Us</a>
 					</li>
-					<li class="text-nav">
+					<li id="nav-3" class="text-nav">
 						<div class="dropdown">
 							<button class="dropbtn">Shopping</button>
 							<div id="mydropdown" class="dropdown-content">
@@ -50,7 +50,7 @@ function activateSearch() {
 							</div>
 						</div>
 					</li>
-					<li class="text-nav">
+					<li id="nav-4" class="text-nav">
 						<a href="about.html">About Us</a>
 					</li>
 					<li class="nav-5">
