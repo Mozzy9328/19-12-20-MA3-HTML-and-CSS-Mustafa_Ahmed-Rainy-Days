@@ -468,9 +468,21 @@ textarea {
 	border: 0;
 }
 
+#message {
+	width: 350px;
+	height: 200px;
+}
+
 .form1 input[type="submit"] {
 	width: 100px;
 	border: 0px solid #000;
+}
+
+/* Error */
+
+div[class*="error"] {
+	color: rgb(235, 15, 15);
+	text-align: center;
 }
 
 .contact-footer {
@@ -1331,23 +1343,13 @@ textarea {
 
 /* Animations 1*/
 
-.jacket1 img,
-.jacket2 img,
-.jacket3 img,
-.jacket4 img,
-.jacket5 img,
-.jacket6 img {
+.jacket-image-size {
 	transition-property: flip-image;
 	transition-duration: 2s;
 	transition-timing-function: ease-in-out;
 }
 
-.jacket1 img:hover,
-.jacket2 img:hover,
-.jacket3 img:hover,
-.jacket4 img:hover,
-.jacket5 img:hover,
-.jacket6 img:hover {
+.jacket-image-size:hover {
 	transform: scaleX(-1);
 }
 
