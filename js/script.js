@@ -73,15 +73,13 @@ function activateSearch() {
 		</header>
 		<main>
 			<div class="search-button">
-                <div class="search-container">
-				    <input
+				 <input
                         type="text"
                         id="search"
                         placeholder="Search for items, brands and inspiration..."
-                    />
-                    <div class="search-icon">
-                        <i class="fas fa-search fa-2x fa-fw fa-fw"></i>
-                    </div>
+                 />
+                 <div class="search-icon">
+                    <i class="fas fa-search fa-2x fa-fw fa-fw"></i>
                 </div>
 			</div>
 

@@ -292,8 +292,20 @@ i:hover {
 
 	/* Search Section */
 
-#search {
-	min-width: 70%;
+	#search {
+		min-width: 50%;
+		padding: 20px 60px;
+	}
+
+	.search-button {
+		text-align: center;
+	}
+
+	.search-icon {
+		font-size: 12px;
+		right: 29%;
+		top: -43px;
+	}
 
 	/* .search-icon {
 		right: 1%;
@@ -307,6 +319,25 @@ i:hover {
 	i:hover {
 		color: #707070;
 	} */
+}
+
+@media (max-width: 412px) {
+	.search-button {
+		width: 100%;
+	}
+	.search-icon {
+		right: 35%;
+		top: -40px;
+		font-size: 10px;
+	}
+	#search::placeholder {
+		color: #fafafa;
+		font-size: 12px;
+	}
+
+	.back-button {
+		font-size: 12px;
+	}
 }
 /* 						
 
