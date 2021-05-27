@@ -55,9 +55,7 @@ function activateSearch() {
 					</li>
 					<li class="nav-5">
 						<div>
-							<a href="search.html">
-								<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
-							</a>
+							<i class="fas fa-search fa-2x fa-fw fa-fw"></i>
 						</div>
 						<div>
 							<i class="fas fa-user fa-2x fa-fw fa-fw"></i>
@@ -78,17 +76,14 @@ function activateSearch() {
                         id="search"
                         placeholder="Search for items, brands and inspiration..."
                  />
-                 <div class="search-icon">
+                <div class="search-icon">
                     <i class="fas fa-search fa-2x fa-fw fa-fw"></i>
                 </div>
-			</div>
-
-            <div class="error-message">
-            <div>
-            
+                <div class="error-message"></div>
+            </div>
             <div> 
-                <a href="index.html">
-                     <p class="back-button">Home Page</p>
+                <a href="">
+                     <p class="back-button">Go Back</p>
                 </a>
             </div>
 		</main>
@@ -104,14 +99,66 @@ searchIcon.addEventListener("click", activateSearch)
 
 // Search not working 
 
-const clickedSearch = document.querySelector(".search-icon")
-const error = document.querySelector(".error-message")
+// const clickedSearchIcon = document.querySelector(".search-icon")
+// const error = document.querySelector(".error-message")
 
-function errorMessage(){
-    error.innerHTML += `
-    <p> The search function is not working, Please try again later </p>
-    `
-}
 
-clickedSearch.addEventListener("click", errorMessage)
+// function errorMessage(){
+//     error.innerHTML += `
+//     <p style="background-color:red" && style="align-text: center"> The search function is not working, Please try again later </p>
+//     `
+// }
+
+// clickedSearchIcon.addEventListener("click", errorMessage)
+
+
+// The Form Validation
+const theForm = document.querySelector("#theform")
+
+const fullName = document.querySelector("#fullname")
+const fullnameError = document.querySelector(".fullname-error")
+
+const email = document.querySelector("#email")
+const emailError = document.querySelector(".email-error")
+
+const subjet = document.querySelector("#subject")
+const subjectError = document.querySelector(".subject-error")
+
+const message = document.querySelector("#message")
+const messageError = document.querySelector(".message-error")
+
+
+function validationForm(event){
+event.preventDefault()
+
+    if(fullName.value.trim().length >= 3){
+        fullnameError.style.display = "none"}
+        else {
+        fullnameError.style.display = "block"
+        }
+    if(validateEmail(email.value) === true){
+        emailError.style.display = "none"}
+         else {
+        emailError.style.display = "block"
+          }
+    if(subject.value.trim().length >= 5){
+        subjectError.style.display = "none"}
+        else {
+            subjectError.style.display = "block"
+        }   
+    if(subject.value.trim().length >= 10){
+        messageError.style.display = "none"}
+        else {
+            messageError.style.display = "block"
+        }           
+        
+    }
+    theForm.addEventListener("submit", validationForm)
+
+
+    function validateEmail(email){
+        const regEx = /\S+@\S+\.\S+/;
+        const patternMatch = regEx.test(email)
+        return patternMatch;
+    }
 

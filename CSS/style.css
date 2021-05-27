@@ -376,7 +376,7 @@ form input {
 /* Heading Text*/
 .contact-info h1 {
 	font-size: 40px;
-	margin: 0 auto;
+	margin: -32px auto;
 }
 /* right section of the main page*/
 .contact-info {
@@ -432,7 +432,6 @@ form input {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-around;
 	flex: 1;
 	height: 500px;
 	width: 700px;
@@ -448,6 +447,7 @@ form input {
 main form {
 	display: flex;
 	flex-direction: column;
+	gap: 5px;
 }
 
 .form1 > input:not(#submit) {

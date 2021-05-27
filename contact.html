@@ -97,7 +97,7 @@
 			</section>
 			<section class="contact-us">
 				<h1>Contact Us</h1>
-				<form action="index.html" method="POST">
+				<form id="theform">
 					<div class="form1">
 						<input
 							type="text"
@@ -105,14 +105,21 @@
 							name="fullname"
 							placeholder="Full Name"
 						/>
+						<div class="fullname-error" style="display: none">
+							It needs to be atleast 3 letter words
+						</div>
 					</div>
+
 					<div class="form1">
 						<input
 							type="email"
-							id="Email"
-							name="Email"
+							id="email"
+							name="email"
 							placeholder="E-mail Address"
 						/>
+						<div class="email-error" style="display: none">
+							Incorrect email address, try again
+						</div>
 					</div>
 					<div class="form1">
 						<input
@@ -121,6 +128,9 @@
 							name="subject"
 							placeholder="What is this about?"
 						/>
+						<div class="subject-error" style="display: none">
+							It needs to be atleast 5 letter words
+						</div>
 					</div>
 					<div class="form1">
 						<textarea
@@ -128,9 +138,12 @@
 							name="message"
 							placeholder="Tell us what you think.."
 						></textarea>
+						<div class="message-error" style="display: none">
+							It needs to be atleast 10 letter words
+						</div>
 					</div>
 					<div class="form1">
-						<input type="submit" id="submit" name="Submit" value="Send" />
+						<input type="submit" id="submit" name="submit" value="Send" />
 					</div>
 				</form>
 			</section>
