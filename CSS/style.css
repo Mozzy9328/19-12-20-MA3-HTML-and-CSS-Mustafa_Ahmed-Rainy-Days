@@ -1191,6 +1191,32 @@ textarea {
 }
 
 @media (max-width: 650px) {
+	.container-for-checkout {
+		display: grid;
+		grid-template-rows: 462px 395px;
+		grid-template-areas:
+			"top top"
+			"bottom bottom";
+	}
+
+	.left-checkout {
+		grid-area: top;
+		justify-self: center;
+		border: none;
+	}
+
+	.right-checkout {
+		grid-area: bottom;
+		gap: 50px;
+	}
+
+	.top-rightcheckout-section h1 {
+		text-align: left;
+	}
+}
+
+/*
+
 	.middle-checkout-section {
 		flex-direction: column;
 		margin: 0%;
@@ -1208,7 +1234,7 @@ textarea {
 	.end-checkout-section {
 		text-align: center;
 	}
-}
+} */
 
 /* 						CHECKOUT SUCCESS PAGE			 */
 
