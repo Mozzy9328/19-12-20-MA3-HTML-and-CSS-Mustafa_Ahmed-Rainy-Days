@@ -1214,8 +1214,25 @@ textarea {
 		gap: 50px;
 	}
 
+	.end-checkout-section {
+		align-self: center;
+		text-align: center;
+	}
+
 	.top-rightcheckout-section h1 {
 		text-align: left;
+	}
+
+	.top-rightcheckout-section {
+		display: none;
+	}
+
+	.middle1-rightcheckout-section {
+		display: none;
+	}
+
+	.middle2-rightcheckout-section {
+		display: none;
 	}
 
 	/* .middle1 {

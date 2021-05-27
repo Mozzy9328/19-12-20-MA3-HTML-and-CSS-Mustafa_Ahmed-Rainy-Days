@@ -146,10 +146,10 @@ event.preventDefault()
         else {
             subjectError.style.display = "block"
         }   
-    if(subject.value.trim().length >= 10){
+    if(message.value.trim().length >= 10){
         messageError.style.display = "none"}
         else {
-            messageError.style.display = "block"
+        messageError.style.display = "block"
         }           
         
     }
