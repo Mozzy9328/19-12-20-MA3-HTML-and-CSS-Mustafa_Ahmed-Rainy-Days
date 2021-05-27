@@ -1193,7 +1193,6 @@ textarea {
 @media (max-width: 650px) {
 	.container-for-checkout {
 		display: grid;
-		grid-template-rows: 462px 395px;
 		grid-template-areas:
 			"top top"
 			"bottom bottom";
