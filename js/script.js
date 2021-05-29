@@ -153,7 +153,8 @@ event.preventDefault()
         }           
         
     }
-    theForm.addEventListener("submit", validationForm)
+
+    // theForm.addEventListener("submit", validationForm)
 
 
     function validateEmail(email){
@@ -161,4 +162,28 @@ event.preventDefault()
         const patternMatch = regEx.test(email)
         return patternMatch;
     }
+
+
+
+// Choose a Jacket
+
+const theJacketColor = document.querySelector("#jacket-color")
+const theJacket = document.querySelector("img .rainy-jones1")
+
+const yellowJacket = document.querySelector("#yellow")
+const blackJacket = document.querySelector("#black")
+const greenJacket = document.querySelector("#green")
+const blueJacket = document.querySelector("#blue")
+
+const chooseColor = theJacketColor.value
+
+
+chooseColor.onclick = function() {
+   if(chooseColor === "Yellow"){
+       console.log("LVOE")
+   }
+   else{
+       console.log("wrong")
+   }
+}
 
