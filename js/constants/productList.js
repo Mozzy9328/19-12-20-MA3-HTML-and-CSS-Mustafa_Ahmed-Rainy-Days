@@ -1,11 +1,11 @@
 export const productArray = [
-    {
-        name: "Jacket by Rainydays",
-        description: "Heritage Jacket From The Outskirt Of France. This Jacket Is Made By The Finest Wool And Cotton",
-        imageURL: "./Images/Jacket 1.jpg",
-        id:"1",
-        price: 999,
-    },
+    // {
+    //     name: "Jacket by Rainydays",
+    //     description: "Heritage Jacket From The Outskirt Of France. This Jacket Is Made By The Finest Wool And Cotton",
+    //     imageURL: "./Images/Jacket 1.jpg",
+    //     id:"1",
+    //     price: 999,
+    // },
     {
         name: "Jacket by Rainydays 2",
         description: "Heritage Jacket From The Outskirt Of France. This Jacket Is Made By The Finest Wool And Cotton",
