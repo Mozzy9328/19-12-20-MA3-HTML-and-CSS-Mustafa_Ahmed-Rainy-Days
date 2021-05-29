@@ -1,3 +1,3 @@
-import {productArray} from "https://noroffcors.herokuapp.com/constants/productList.js"
+import {productArray} from "../constants/productList.js"
 
 console.log(productArray);
