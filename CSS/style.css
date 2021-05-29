@@ -164,7 +164,7 @@ header div a {
 
 body {
 	position: relative;
-	background-image: url("../Images/Background\ Photo\ with\ blur.jpg");
+	background-image: url("../images/background-photo-with-blur.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
