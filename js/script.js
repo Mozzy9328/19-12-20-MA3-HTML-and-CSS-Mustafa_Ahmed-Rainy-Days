@@ -36,7 +36,7 @@ function activateSearch() {
 			<nav>
 				<ul class="top-header-container">
 					<li class="nav-1" id="fix-image">
-						<a href="index.html"> <img src="Images/Transparent Logo.png" /></a>
+						<a href="index.html"> <img src="images/transparent-logo.png"  alt="A transparent logo"/></a>
 					</li>
 					<li id="nav-2" class="text-nav">
 						<a href="contact.html">Contact Us</a>
@@ -97,6 +97,7 @@ searchIcon.addEventListener("click", activateSearch)
 
 
 
+
 // Search not working 
 
 // const clickedSearchIcon = document.querySelector(".search-icon")
@@ -113,7 +114,7 @@ searchIcon.addEventListener("click", activateSearch)
 
 
 // The Form Validation
-const theForm = document.querySelector("#theform")
+const theForm = document.querySelector(".theform")
 
 const fullName = document.querySelector("#fullname")
 const fullnameError = document.querySelector(".fullname-error")
@@ -154,7 +155,7 @@ event.preventDefault()
         
     }
 
-    // theForm.addEventListener("submit", validationForm)
+    theForm.addEventListener("submit", validationForm)
 
 
     function validateEmail(email){
@@ -165,25 +166,4 @@ event.preventDefault()
 
 
 
-// Choose a Jacket
-
-const theJacketColor = document.querySelector("#jacket-color")
-const theJacket = document.querySelector("img .rainy-jones1")
-
-const yellowJacket = document.querySelector("#yellow")
-const blackJacket = document.querySelector("#black")
-const greenJacket = document.querySelector("#green")
-const blueJacket = document.querySelector("#blue")
-
-const chooseColor = theJacketColor.value
-
-
-chooseColor.onclick = function() {
-   if(chooseColor === "Yellow"){
-       console.log("LVOE")
-   }
-   else{
-       console.log("wrong")
-   }
-}
 
