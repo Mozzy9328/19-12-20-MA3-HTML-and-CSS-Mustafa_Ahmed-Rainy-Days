@@ -98,15 +98,16 @@ searchIcon.addEventListener("click", activateSearch)
 
 
 
-// Search not working 
+//Search not working 
 
 // const clickedSearchIcon = document.querySelector(".search-icon")
 // const error = document.querySelector(".error-message")
 
 
-// function errorMessage(){
+// function errorMessage(event){
+//     console.log("reeeeed")
 //     error.innerHTML += `
-//     <p style="background-color:red" && style="align-text: center"> The search function is not working, Please try again later </p>
+//     <p style="background-color:red"> The search function is not working, Please try again later </p>
 //     `
 // }
 
@@ -164,6 +165,7 @@ event.preventDefault()
         return patternMatch;
     }
 
+    localStorage.getItem("addingToCart")
 
 
 

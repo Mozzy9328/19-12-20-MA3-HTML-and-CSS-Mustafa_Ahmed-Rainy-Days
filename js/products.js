@@ -71,51 +71,28 @@ event.stopPropagation()
    jacketColors.addEventListener("change", jacketOption) 
 
 
-// buy
 
-// const checkoutInfo = document.querySelector(".middle-checkout-section")
-
-// function buyingItem() {
-//     if(jacketColors.value === "yellow"){
-//         checkoutInfo.innerHTML = `
-//         <section class="middle-checkout-section">
-//         <div class="middle1">
-//             <img src="images/jacket1.jpg" alt="A image of a jacket" />
-//         </div>
-//         <div class="middle2">
-//             <h2>Rainy Jones 2</h2>
-//             <h3>$999.00</h3>
-//             <p>
-//                 Heritage Jacket From The Outskirt Of France. This Jacket Is Made
-//                 By The Finest Wool And Cotton.
-//             </p>
-//             <div id="resize-p-ckp">
-//                 <p id="bold">Qty:</p>
-//                 <p>1</p>
-//             </div>
-//             <div id="resize-p-ckp">
-//                 <p id="bold">Color:</p>
-//                 <p>Yellow</p>
-//             </div>
-//         </div>
-//     </section>` 
-
-// }}
-
-// buyingItem;
+   // Add to cart functionaily
 
 
-const cart = document.querySelector(".add-to-cart")
+const cartIcon = document.querySelector(".add-to-cart")
 const cartButton = document.querySelector("#Add-to-bag")
+const cartButton2 = document.querySelector(".cart")
+
 
 let numberofClicks = 0
 
 
-cartButton.onclick = function(){
+function addingToCart(){
     event.preventDefault()
+
     numberofClicks++
-    cart.style.display ="block"
-    cart.innerHTML = `<span> ${numberofClicks}</span>`
+
+    cartIcon.style.display ="block"
+    cartIcon.innerHTML = `<span> ${numberofClicks}</span>`
 }
+
+cartButton.addEventListener("click",addingToCart)
+cartButton2.addEventListener("click",addingToCart)
 
 
