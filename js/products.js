@@ -77,7 +77,7 @@ event.stopPropagation()
 
 const cartIcon = document.querySelector(".add-to-cart")
 const cartButton = document.querySelector("#Add-to-bag")
-const cartButton2 = document.querySelector(".cart")
+const cartButtonMainPage = document.querySelector(".cart")
 
 
 let numberofClicks = 0
@@ -92,7 +92,5 @@ function addingToCart(){
     cartIcon.innerHTML = `<span> ${numberofClicks}</span>`
 }
 
-cartButton.addEventListener("click",addingToCart)
-cartButton2.addEventListener("click",addingToCart)
-
-
+cartButton.addEventListener("click", addingToCart)
+cartButtonMainPage.addEventListener("click", addingToCart)

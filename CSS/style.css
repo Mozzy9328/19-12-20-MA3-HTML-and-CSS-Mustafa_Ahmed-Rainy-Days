@@ -710,7 +710,7 @@ div[class*="error"] {
 	grid-area: Jacket6;
 }
 
-#information {
+.information {
 	position: absolute;
 	top: 300px;
 	width: 100%;
@@ -721,7 +721,7 @@ div[class*="error"] {
 	letter-spacing: 1.5px;
 }
 
-#heart-icon {
+.heart-icon {
 	position: absolute;
 	font-size: 10px;
 	top: 10px;
@@ -903,8 +903,7 @@ div[class*="error"] {
 	margin: 0 auto;
 }
 
-.select1,
-.select2 {
+.size-and-color {
 	display: flex;
 	padding: 0px 0px 25px 0px;
 	max-width: 100%;
@@ -912,8 +911,7 @@ div[class*="error"] {
 	line-height: 50px;
 }
 
-.select1 label,
-.select2 label {
+.size-and-color label {
 	text-align: start;
 	font-size: 18px;
 	font-weight: bold;
