@@ -671,7 +671,7 @@ div[class*="error"] {
 
 /* Image size for jackets */
 .jacket-image-size {
-	max-width: 350px;
+	max-width: 230px;
 	height: 350px;
 }
 

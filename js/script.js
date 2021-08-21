@@ -156,7 +156,7 @@ event.preventDefault()
         
     }
 
-    theForm.addEventListener("submit", validationForm)
+    // theForm.addEventListener("submit", validationForm)
 
 
     function validateEmail(email){
@@ -169,3 +169,107 @@ event.preventDefault()
 
 
 
+// Fetching products from WordPress
+
+const theJackets = document.querySelector(".jacket-list-container")
+
+let url = `http://travelsofmozzy.one/wp-json/wc/store/products`
+
+async function fetchProducts(){
+        const response = await fetch(url)
+        
+        const json = await response.json()
+
+        const images = json.images
+        console.log(json)
+    
+    theJackets.innerHTML = "";
+    
+    for (let i = 0; i < json.length; i++){
+
+
+        theJackets.innerHTML += 
+        `
+        <div class="jacket1">
+            <img
+            src= ${json[0].images[0].src}
+            class="jacket-image-size"
+            />
+            <div class="heart-icon">
+                <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+            </div>
+            <div class="information">
+                <p>${json[0].name}</p>
+                <p>Price: ${json[0].prices.price}</p>
+                <button class="cart">${json[0].add_to_cart.text}</button>
+            </div>
+        </div>
+        <div class="jacket2">
+        <img
+        src= ${json[1].images[0].src}
+        class="jacket-image-size"
+        />
+        <div class="heart-icon">
+            <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="information">
+            <p>${json[1].name}</p>
+            <p>Price: ${json[1].prices.price}</p>
+            <button class="cart">${json[1].add_to_cart.text}</button>
+        </div>
+    </div>
+    <div class="jacket3">
+    <img
+    src= ${json[2].images[0].src}
+    class="jacket-image-size"
+    />
+    <div class="heart-icon">
+        <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="information">
+        <p>${json[2].name}</p>
+        <p>Price: ${json[2].prices.price}</p>
+        <button class="cart">${json[2].add_to_cart.text}</button>
+    </div>
+    </div>
+    <div class="jacket4">
+    <img
+    src= ${json[3].images[0].src}
+    class="jacket-image-size"
+    />
+    <div class="heart-icon">
+        <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="information">
+        <p>${json[3].name}</p>
+        <p>Price: ${json[3].prices.price}</p>
+        <button class="cart">${json[3].add_to_cart.text}</button>
+    </div>
+    </div>
+    <div class="jacket5">
+        <img
+        src= ${json[4].images[0].src}
+        class="jacket-image-size"
+        />
+    <div class="heart-icon">
+        <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="information">
+        <p>${json[4].name}</p>
+        <p>Price: ${json[4].prices.price}</p>
+        <button class="cart">${json[4].add_to_cart.text}</button>
+    </div>
+    </div>
+        </section>`
+    }
+}
+
+fetchProducts();
+
+//add To Cart function
+
+const button = document.querySelector(".cart")
+
+
+
+button.addEventListener("click",)
