@@ -670,7 +670,7 @@ div[class*="error"] {
 }
 
 /* Image size for jackets */
-a {
+a .cart {
 	background-color: #ffff;
 	border: #707070 2px solid;
 }
