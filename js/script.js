@@ -201,7 +201,7 @@ async function fetchProducts(){
             <div class="information">
                 <p>${json[0].name}</p>
                 <p>Price: ${json[0].prices.price}</p>
-                <a href="http://travelsofmozzy.one/product?name=${json[0].name}" class="cart">${json[0].add_to_cart.text}</a>
+                <a href="https://travelsofmozzy.one/product?name=${json[0].name}" class="cart">${json[0].add_to_cart.text}</a>
             </div>
         </div>
         <div class="jacket2">
@@ -215,7 +215,7 @@ async function fetchProducts(){
         <div class="information">
             <p>${json[1].name}</p>
             <p>Price: ${json[1].prices.price}</p>
-            <a href="http://travelsofmozzy.one/product?name=${json[1].name}" class="cart">${json[1].add_to_cart.text}</a>
+            <a href="https://travelsofmozzy.one/product?name=${json[1].name}" class="cart">${json[1].add_to_cart.text}</a>
         </div>
     </div>
     <div class="jacket3">
@@ -229,7 +229,7 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[2].name}</p>
         <p>Price: ${json[2].prices.price}</p>
-        <a href="http://travelsofmozzy.one/product?name=${json[2].name}" class="cart">${json[2].add_to_cart.text}</a>
+        <a href="https://travelsofmozzy.one/product?name=${json[2].name}" class="cart">${json[2].add_to_cart.text}</a>
     </div>
     </div>
     <div class="jacket4">
@@ -243,7 +243,7 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[3].name}</p>
         <p>Price: ${json[3].prices.price}</p>
-        <a href="http://travelsofmozzy.one/product?name=${json[3].name}" class="cart">${json[3].add_to_cart.text}</a>
+        <a href="https://travelsofmozzy.one/product?name=${json[3].name}" class="cart">${json[3].add_to_cart.text}</a>
     </div>
     </div>
     <div class="jacket5">
@@ -257,7 +257,7 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[4].name}</p>
         <p>Price: ${json[4].prices.price}</p>
-        <a href="http://travelsofmozzy.one/product?name=${json[4].name}" class="cart">${json[4].add_to_cart.text}</a>
+        <a href="https://travelsofmozzy.one/product?name=${json[4].name}" class="cart">${json[4].add_to_cart.text}</a>
     </div>
     </div>
         </section>`
