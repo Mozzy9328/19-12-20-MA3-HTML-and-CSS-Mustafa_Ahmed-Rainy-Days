@@ -266,7 +266,7 @@ async function fetchProducts(){
         <p>${json[4].name}</p>
         <p>Price: ${json[4].prices.price}</p>
         <div class="cart">
-        <a href="https://travelsofmozzy.one/product?name=${json[4].name}>${json[4].add_to_cart.text}</a>
+        <a href="https://travelsofmozzy.one/product?name=${json[4].name}">${json[4].add_to_cart.text}</a>
         </div>
     </div>
     </div>
