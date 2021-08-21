@@ -270,7 +270,7 @@ fetchProducts();
 
 // function getParameter(parameterName){
 
-const queryString = window.location.search;
+const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString)
 
