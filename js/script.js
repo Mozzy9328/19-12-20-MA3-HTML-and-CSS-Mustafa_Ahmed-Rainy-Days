@@ -173,7 +173,7 @@ event.preventDefault()
 
 const theJackets = document.querySelector(".jacket-list-container")
 
-let url = `http://travelsofmozzy.one/wp-json/wc/store/products`
+let url = `https://travelsofmozzy.one/wp-json/wc/store/products`
 
 async function fetchProducts(){
         const response = await fetch(url)
