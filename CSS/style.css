@@ -670,9 +670,9 @@ div[class*="error"] {
 }
 
 /* Image size for jackets */
-a .cart {
-	background-color: #707070;
-	border: #115e1e 2px solid;
+a {
+	background-color: #ffff;
+	border: #707070 2px solid;
 }
 
 .jacket-image-size {
