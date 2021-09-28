@@ -156,7 +156,7 @@ event.preventDefault()
         
     }
 
-    // theForm.addEventListener("submit", validationForm)
+    theForm.addEventListener("submit", validationForm)
 
 
     function validateEmail(email){
@@ -280,7 +280,7 @@ fetchProducts();
 
 // function getParameter(parameterName){
 
-const queryString = window.location.search;
+const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString)
 
