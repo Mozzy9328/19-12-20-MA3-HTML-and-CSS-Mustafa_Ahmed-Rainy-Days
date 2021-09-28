@@ -74,33 +74,31 @@
 		</header>
 		<main class="fourth-container">
 			<section class="contact-info">
-				<header>
+				<div class="contact-h1">
 					<h1>Contact Information</h1>
-				</header>
-				<div class="p1">
-					<p>Phone:</p>
-					<p>+47 464 19 942</p>
 				</div>
-				<div class="p1">
-					<p>Address:</p>
-					<p>Hekkeveien 4, 0572 Oslo</p>
-				</div>
-				<div class="p1">
-					<p>E-mail:</p>
-					<p>rainydays&#64;support.com</p>
+				<div class="contact-p">
+					<div class="p1">
+						<p>Phone:</p>
+						<p>+47 464 19 942</p>
+					</div>
+					<div class="p1">
+						<p>Address:</p>
+						<p>Hekkeveien 4, 0572 Oslo</p>
+					</div>
+					<div class="p1">
+						<p>E-mail:</p>
+						<p>rainydays&#64;support.com</p>
+					</div>
 				</div>
 				<div class="location-map">
-					<img
-						src="images/map.jpg"
-						alt="The location of the store"
+					<iframe
+						allowfullscreen
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB0DQhtxwY3modT3TxIKuz6Et6CJHvq3Fk
+    					&q=Sinsen+veien+5b"
 						id="google-map"
-					/>
-				</div>
-				<div class="social-media">
-					<i class="fab fa-facebook-f"></i>
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-pinterest"></i>
+					>
+					</iframe>
 				</div>
 			</section>
 			<section class="contact-us">
@@ -113,11 +111,10 @@
 							name="fullname"
 							placeholder="Full Name"
 						/>
-						<div class="fullname-error" style="display: none">
-							It needs to be atleast 3 letter words
-						</div>
 					</div>
-
+					<div class="fullname-error" style="display: none">
+						It needs to be atleast 3 letter words
+					</div>
 					<div class="form1">
 						<input
 							type="email"
@@ -125,9 +122,9 @@
 							name="email"
 							placeholder="E-mail Address"
 						/>
-						<div class="email-error" style="display: none">
-							Incorrect email address, try again
-						</div>
+					</div>
+					<div class="email-error" style="display: none">
+						Incorrect email address, try again
 					</div>
 					<div class="form1">
 						<input
@@ -136,9 +133,9 @@
 							name="subject"
 							placeholder="What is this about?"
 						/>
-						<div class="subject-error" style="display: none">
-							It needs to be atleast 5 letter words
-						</div>
+					</div>
+					<div class="subject-error" style="display: none">
+						It needs to be atleast 5 letter words
 					</div>
 					<div class="form1">
 						<input
@@ -147,9 +144,9 @@
 							name="message"
 							placeholder="Tell us what you think.."
 						/>
-						<div class="message-error" style="display: none">
-							It needs to be atleast 10 letter words
-						</div>
+					</div>
+					<div class="message-error" style="display: none">
+						It needs to be atleast 10 letter words
 					</div>
 					<div class="form1">
 						<input type="submit" id="submit" name="submit" value="Send" />
@@ -157,7 +154,13 @@
 				</form>
 			</section>
 		</main>
-		<footer class="contact-footer">
+		<footer class="footer">
+			<div class="social-media">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-pinterest"></i>
+			</div>
 			<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
 		</footer>
 		<script src="js/script.js"></script>

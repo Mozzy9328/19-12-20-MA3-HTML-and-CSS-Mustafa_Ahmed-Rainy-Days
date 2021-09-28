@@ -87,7 +87,13 @@ function activateSearch() {
                 </a>
             </div>
 		</main>
-		<footer class="index-footer">
+		<footer class="footer" style="margin-top:65px">
+            <div class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
 			<p>Copyright &copy; 2020 Mustafa Ahmed | All Rights Reserved</p>
 		</footer>
 		<script src="js/script.js"></script>`

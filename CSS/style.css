@@ -41,9 +41,9 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: nowrap;
-	margin: 0 auto;
-	padding: 25px 0px 0px 0px;
+	padding: 25px 0px 20px 0px;
 	list-style: none;
+	background-color: rgba(189, 193, 192, 0.4);
 }
 
 .nav-1 img /* Logo */ {
@@ -179,7 +179,7 @@ body {
 .second-container {
 	display: flex;
 	flex-direction: column;
-	margin-top: 4%;
+	margin: 74px;
 }
 .third-container {
 	display: flex;
@@ -187,7 +187,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 110px;
-	margin: 70px auto;
+	margin: 75px auto;
 }
 
 .button {
@@ -219,13 +219,21 @@ body {
 	background-color: #635d5d;
 }
 
-.index-footer {
+/* FOOTER */
+
+.footer {
 	position: relative;
 	text-align: center;
-	padding: 1px 0px;
-	top: 15%;
+	padding: 0px 0px 5px 0px;
 	font-weight: bold;
 	margin: 0 auto;
+	background-color: rgba(189, 193, 192, 0.4);
+}
+
+/* Social media icons*/
+.social-media {
+	margin: 15px;
+	font-size: 25px;
 }
 
 i:hover {
@@ -310,19 +318,6 @@ i:hover {
 		right: 29%;
 		top: -43px;
 	}
-
-	/* .search-icon {
-		right: 1%;
-		top: 20px;
-	} */
-
-	/* header div a:hover {
-		text-decoration-line: underline;
-		color: #707070;
-	}
-	i:hover {
-		color: #707070;
-	} */
 }
 
 @media (max-width: 412px) {
@@ -361,12 +356,11 @@ CONTACT US PAGE
 /* Contact information section*/
 .fourth-container {
 	max-width: 90%;
+	padding-top: 34px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 }
 
 form input {
@@ -377,58 +371,60 @@ form input {
 	border: 1px solid #000;
 }
 
-/* Heading Text*/
-.contact-info h1 {
-	font-size: 40px;
-	margin: -32px auto;
-}
 /* right section of the main page*/
 .contact-info {
-	display: flex;
+	display: grid;
+	grid-template-areas:
+		"contact-h1 contact-h1"
+		"maps contact-p";
 	flex: 2;
-	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 700px;
-	height: 500px;
-	margin: 30px 0px 0px 0px;
 	background-color: rgba(220, 220, 220, 0.61);
 	font-size: 20px;
 	border: 1px solid #000000;
 	border-right: 0;
 }
-
-/* Child of container 1*/
-.p1 {
-	margin-right: 100px;
-	align-self: flex-end;
-	width: 30%;
+/* Contact us h1*/
+.contact-h1 {
+	grid-area: contact-h1;
+	justify-self: center;
+	padding-top: 15px;
 }
-.p1 p:first-child {
+.contact-h1 h1 {
+	font-size: 40px;
+}
+
+/* Contact us Paragraph*/
+.contact-p {
+	grid-area: contact-p;
+	align-self: center;
+}
+.contact-p p:first-child {
 	font-weight: bold;
 }
 
+.p1 {
+	margin: 40px;
+}
+
+/* GOOGLE MAPS */
 .location-map {
-	align-self: flex-start;
-	margin-top: -310px;
-	margin-left: 70px;
-	width: 250px;
+	grid-area: maps;
+	align-self: center;
+	justify-self: center;
 }
 
 #google-map {
-	width: 320px;
-	height: auto;
-}
-
-/* Social media icons*/
-.social-media {
-	align-self: center;
+	border: 0;
+	width: 400px;
+	height: 250px;
 }
 
 /* 						CONTACT US FORM SECTION							*/
 
 /* Heading Text*/
 .contact-us h1 {
+	padding: 5px;
 	font-size: 40px;
 }
 /* Left section of the main page*/
@@ -437,9 +433,6 @@ form input {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	flex: 1;
-	height: 500px;
-	width: 700px;
-	margin: 30px 0px 0px 0px;
 	background-color: rgba(220, 220, 220, 0.61);
 	border: 1px solid #000000;
 }
@@ -451,7 +444,6 @@ form input {
 main form {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
 }
 
 .form1 > input:not(#submit) {
@@ -486,36 +478,43 @@ textarea {
 
 div[class*="error"] {
 	color: rgb(235, 15, 15);
+	font-size: 12px;
 	text-align: center;
 }
 
-.contact-footer {
+/* .contact-footer {
 	position: relative;
 	text-align: center;
 	padding: 1px 0px;
 	top: 8%;
 	font-weight: bold;
 	margin: 0 auto;
-}
+} */
 /* To remove the map*/
 @media (max-width: 1184px) {
+	.contact-info {
+		grid-template-areas:
+			"contact-h1"
+			"contact-p"
+			"maps";
+		flex: 1;
+	}
 	#google-map {
-		display: none;
+		min-width: 90vw;
 	}
-	.location-map {
-		display: none;
-	}
-	.p1 {
-		margin: 0 auto;
+	.contact-h1 {
 		align-self: center;
+		justify-self: center;
 		text-align: center;
-		width: 60%;
+	}
+
+	.contact-p {
+		justify-self: center;
 	}
 	.social-media {
 		align-self: center;
 		text-align: center;
 		margin: 0 auto;
-		width: 30%;
 	}
 }
 
@@ -531,12 +530,12 @@ div[class*="error"] {
 
 .fifth-container {
 	display: grid;
-	justify-content: space-around;
-	grid-template-columns: 40% 40%;
-	grid-template-rows: 27% 93%;
+	grid-column-gap: 60px;
 	grid-template-areas:
 		"h1 h1"
 		"image paragraph";
+	max-width: 90%;
+	margin: 20px auto;
 }
 
 /* About us h1 */
@@ -555,24 +554,27 @@ div[class*="error"] {
 }
 
 .about-us-image img {
-	width: 100%;
-	height: 100%;
+	width: 40vw;
+	height: 60vh;
 	border-radius: 105px;
 }
 /* About us Paragraph */
 .about-us-paragraph {
 	grid-area: paragraph;
-	background-color: rgba(225, 225, 225, 0.61);
-	line-height: 180%;
-	padding: 2%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
+	text-align: center;
+	background-color: rgba(225, 225, 225, 0.61);
+	line-height: 180%;
+	padding: 5% 20%;
+	border-radius: 100px;
 }
 
+/* Slogans */
 .aup2 {
-	margin-top: 2%;
+	margin-top: 5%;
 	align-self: center;
 }
 
@@ -590,31 +592,25 @@ div[class*="error"] {
 	margin: 0 auto;
 }
 
-/* footer */
-.about-footer {
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	padding: 1px 0px;
-	top: 15%;
-	font-weight: bold;
-}
-
 @media (max-width: 1109px) {
 	.about-us-paragraph {
 		margin-top: 15%;
 	}
 	.fifth-container {
 		display: grid;
-		justify-content: space-around;
-		grid-template-columns: 40% 40%;
-		grid-template-rows: 16% 56%;
 		grid-template-areas:
 			"h1 h1"
 			"image image"
 			"paragraph paragraph";
 	}
 
+	.about-us-image img {
+		margin-top: 40px;
+		width: 90vw;
+		height: 70vh;
+	}
+
+	/* SLOGAN */
 	.about-us-keywords h3 {
 		color: #090e52;
 		font-size: 25px;
@@ -631,16 +627,6 @@ div[class*="error"] {
 		background-color: rgba(225, 225, 225, 0.61);
 		border-radius: 185px;
 		width: 60%;
-	}
-
-	/* footer */
-	.about-footer {
-		position: relative;
-		margin: 0 auto;
-		text-align: center;
-		padding: 1px 0px;
-		top: 62%;
-		font-weight: bold;
 	}
 }
 /* 						MEN/WOMAN SECTION JACKETS 				*/
@@ -953,7 +939,7 @@ div[class*="error"] {
 	align-self: flex-end;
 }
 
-#insp-text {
+.insp-text {
 	/* fIX THIS */
 	background-color: rgba(63, 57, 57, 0.8);
 	padding: 1%;
@@ -966,7 +952,7 @@ div[class*="error"] {
 	font-size: 14px;
 }
 
-#insp-size {
+.insp-size {
 	max-width: 100%;
 	height: auto;
 }
@@ -1099,17 +1085,16 @@ div[class*="error"] {
 	margin-bottom: 2%;
 }
 /* text resize */
-#resize-p-ckp {
+.resize-p-ckp {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-right: 76%;
 }
-/* icon section */
-/* .middle3 {
-	flex: 1;
-	max-width: 10%;
-} */
+
+.bold {
+	font-weight: 700;
+}
 
 /* The end section of the left aside */
 
