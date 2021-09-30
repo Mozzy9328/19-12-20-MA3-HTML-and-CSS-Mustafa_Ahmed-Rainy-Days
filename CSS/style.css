@@ -1098,8 +1098,9 @@ div[class*="error"] {
 	height: 88%;
 } */
 .middle1 img {
-	max-width: 100%;
-	margin-left: -10px;
+	max-width: 7vw;
+	height: auto;
+	margin-right: 15px;
 }
 /* text section*/
 /* .middle2 {
@@ -1112,6 +1113,7 @@ div[class*="error"] {
 .middle2 h2 {
 	font-size: 20px;
 	margin-bottom: 7px;
+	text-align: left;
 }
 .middle2 h3 {
 	font-weight: normal;
@@ -1120,8 +1122,16 @@ div[class*="error"] {
 }
 .middle2 p {
 	font-size: 14px;
+	width: 70%;
 	margin-bottom: 10px;
 	margin-right: auto;
+}
+
+.middle3 {
+	background: none;
+	border: none;
+	cursor: pointer;
+	align-self: flex-start;
 }
 #modified-bold {
 	font-weight: bold;
