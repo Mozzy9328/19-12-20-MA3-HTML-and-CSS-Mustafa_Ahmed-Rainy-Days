@@ -1,24 +1,3 @@
-// Clickable Jackets 
-
-const theJackets = document.querySelectorAll([".jacket1", ".jacket2", ".jacket3",".jacket4",".jacket5",".jacket6"])
-const buttonCart = document.querySelector(".cart")
-
-const queryString = document.location.search
-const params = new URLSearchParams(queryString)
-const color = params.get("color") 
-
-console.log(color)
-
-const queryUrl = 
-
-
-buttonCart.addEventListener = "click", () => {
-    for(let i = 0; i < theJackets.length; i++){
-        buttonCart.innerHTML = `<a href= "jacket-information.html?=${theJackets[i]}"><button class="cart">Add to Bag</button></a>`
-    }
-}
-
-
 // Choose a Jacket
 
 const jacketColors = document.querySelector("#jacket-color")
