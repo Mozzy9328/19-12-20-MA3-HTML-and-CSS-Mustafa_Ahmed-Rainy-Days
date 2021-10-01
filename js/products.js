@@ -1,4 +1,7 @@
-// Fetching products from WordPress
+
+
+
+// Fetching products from WordPress to Men & Woman Page
 
 const theJackets = document.querySelector(".jacket-list-container")
 
@@ -17,41 +20,39 @@ async function fetchProducts(){
     for (let i = 0; i < json.length; i++){
 
 
-        theJackets.innerHTML += 
+        theJackets.innerHTML = 
         `
-        <div class="jacket1">
-            <img
-            src= ${json[0].images[0].src}
-            class="jacket-image-size"
-            />
-            <div class="heart-icon">
-                <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="information">
-                <p>${json[0].name}</p>
-                <p>NOK ${json[0].prices.price}</p>
-                <div class="cart">
-                <a href="jacket-information.html?id=${json[0].id}">${json[0].add_to_cart.text}</a>
-                </div>
-            </div>
-        </div>
-        <div class="jacket2">
-        <img
-        src= ${json[1].images[0].src}
-        class="jacket-image-size"
-        />
-        <div class="heart-icon">
-            <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="information">
-            <p>${json[1].name}</p>
-            <p>NOK ${json[1].prices.price}</p>
-            <div class="cart">
-            <a href="jacket-information.html?id=${json[1].id}">${json[1].add_to_cart.text}</a>
-            </div>
-        </div>
+<div class="jacket1">
+    <img
+    src= ${json[0].images[0].src}
+    class="jacket-image-size"
+     />
+    <div class="heart-icon">
+        <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
     </div>
-    <div class="jacket3">
+    <div class="information">
+        <p>${json[0].name}</p>
+        <p>NOK ${json[0].prices.price}</p>
+        <a href="jacket-information.html?id=${json[0].id}"><div class="cart" onClick = "helloAgain()">${json[0].add_to_cart.text}
+        </div></a>
+    </div>
+</div>
+<div class="jacket2">
+    <img
+    src= ${json[1].images[0].src}
+    class="jacket-image-size"
+    />
+    <div class="heart-icon">
+        <i class="fas fa-heart fa-2x fa-fw fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="information">
+        <p>${json[1].name}</p>
+        <p>NOK ${json[1].prices.price}</p>
+        <a href="jacket-information.html?id=${json[1].id}"><div class="cart" onClick = "helloAgain()">${json[1].add_to_cart.text}
+        </div></a>
+    </div>
+ </div>
+<div class="jacket3">
     <img
     src= ${json[2].images[0].src}
     class="jacket-image-size"
@@ -62,12 +63,11 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[2].name}</p>
         <p>NOK ${json[2].prices.price}</p>
-        <div class="cart">
-        <a href="jacket-information.html?id=${json[2].id}">${json[2].add_to_cart.text}</a>
-        </div>
+        <a href="jacket-information.html?id=${json[2].id}"><div class="cart" onClick = "helloAgain()">${json[2].add_to_cart.text}
+        </div></a>
     </div>
-    </div>
-    <div class="jacket4">
+</div>
+<div class="jacket4">
     <img
     src= ${json[3].images[0].src}
     class="jacket-image-size"
@@ -78,12 +78,11 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[3].name}</p>
         <p>NOK ${json[3].prices.price}</p>
-        <div class="cart">
-        <a href="jacket-information.html?id=${json[3].id}">${json[3].add_to_cart.text}</a>
-        </div>
+        <a href="jacket-information.html?id=${json[3].id}"><div class="cart" onClick = "helloAgain()">${json[3].add_to_cart.text}
+        </div></a>
     </div>
-    </div>
-    <div class="jacket5">
+</div>
+<div class="jacket5">
         <img
         src= ${json[4].images[0].src}
         class="jacket-image-size"
@@ -94,12 +93,11 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[4].name}</p>
         <p>NOK ${json[4].prices.price}</p>
-        <div class="cart">
-        <a href="jacket-information.html?id=${json[4].id}">${json[4].add_to_cart.text}</a>
-        </div>
+        <a href="jacket-information.html?id=${json[4].id}"><div class="cart" onClick = "helloAgain()">${json[4].add_to_cart.text}
+        </div></a>
     </div>
-    </div>
-    <div class="jacket6">
+</div>
+<div class="jacket6">
         <img
         src= ${json[5].images[0].src}
         class="jacket-image-size"
@@ -110,13 +108,12 @@ async function fetchProducts(){
     <div class="information">
         <p>${json[5].name}</p>
         <p>NOK ${json[5].prices.price}</p>
-        <div class="cart">
-        <a href="jacket-information.html?id=${json[5].id}">${json[5].add_to_cart.text}</a>
-        </div>
+        <a href="jacket-information.html?id=${json[5].id}"><div class="cart" onClick = "helloAgain()">${json[5].add_to_cart.text}
+        </div></a>
     </div>
-    </div>
-        </section>`
+</div>`
     }
+    
 }
 
 fetchProducts();
@@ -141,8 +138,6 @@ const rainyJones1 = document.querySelector(".rainy-jones1")
 const rainyJones2 = document.querySelector(".rainy-jones2")
 const rainyJones3 = document.querySelector(".rainy-jones3")
 const containerForCheckout = document.querySelector(".container-for-checkout")
-// const checkoutInfo = document.querySelector(".middle-checkout-section")
-
 
 
 async function jacketOption() {
@@ -179,30 +174,6 @@ async function jacketOption() {
 						/>`
         jacketColors.innerHTML = `<option value="${details.tags[0].name}">${details.tags[0].name}</option>`
 
-
-        // checkoutInfo.innerHTML = 
-        // `<div class="middle1">
-        //     <img src=${details.images[0].src}" alt=${details.images[0].alt} />
-        // </div>
-        // <div class="middle2">
-        //     <h2>${details.name}</h2>
-        //     <h3>${details.prices.price}</h3>
-        //     <p>
-        //         Heritage Jacket From The Outskirt Of France. This Jacket Is Made
-        //         By The Finest Wool And Cotton.
-        //     </p>
-        //     <div class="resize-p-ckp">
-        //         <p class="bold">Qty:</p>
-        //         <p>1</p>
-        //     </div>
-        //     <div class="resize-p-ckp">
-        //         <p class="bold">Color:</p>
-        //         <p>${details.tags[0].name}</p>
-        //     </div>
-        // </div>
-        // <button class="middle3">
-        //     <i class="fas fa-minus-circle"></i>
-        // </button>`
     }catch(error){}
 }
 
@@ -212,45 +183,81 @@ jacketOption();
 // Add to cart functionaily (Numbers)
 
 
-const cartIcon = document.querySelector(".add-to-cart")
-const cartButton = document.querySelector("#Add-to-bag")
-// const cartButtonMainPage = document.querySelector(".cart")
+// const cartIcon = document.querySelector(".add-to-cart")
+// const cartButton = document.querySelector("#Add-to-bag")
 
-let numberofClicks = 0
-
-
-function addingToCart(){
-    event.preventDefault()
-
-    numberofClicks++
-
-    cartIcon.style.display ="block"
-    cartIcon.innerHTML = `<span> ${numberofClicks}</span>`
+// let numberofClicks = 0
 
 
-}
+// function addingToCart(){
+//     event.preventDefault()
 
-cartButton.addEventListener("click", addingToCart)
-// cartButtonMainPage.addEventListener("click", addingToCart)
+//     numberofClicks++
+
+//     cartIcon.style.display ="block"
+//     cartIcon.innerHTML = `<span> ${numberofClicks}</span>`
 
 
-// Add Item to cart (items)
+// }
 
+// cartButton.addEventListener("click", addingToCart)
 
+const testUrl = "https://travelsofmozzy.one/wp-json/wc/store/products/"
 
-    const removeButton = document.querySelector(".remove-button")
-    function logClick(){
- try{
-   for(let i = 0; i < removeButton.length; i++){
-       const btn = removeButton[i].name
-       console.log("click")}
+let addToBag = document.querySelectorAll(".cart")
 
-   }
- catch(error){
-       console.log("Something Went Wrong")
+async function testLol(){
+const retrieve =  await fetch(testUrl);
+const products = await retrieve.json()
+console.log(products)}
+
+testLol();
+
+function loadCartNumber() {
+    let productNumber = localStorage.getItem(`cartNumber`); 
+
+    if(productNumber){
+        document.querySelector(".add-to-cart").textContent = productNumber;
+
     }
 }
-btn.addEventListener("click", logClick)
+
+function cartNumber(){
+    let productNumber = localStorage.getItem(`cartNumber`); 
+    productNumber = parseInt(productNumber);
+    console.log(productNumber)
+    if(productNumber){
+    localStorage.setItem(`cartNumber`, productNumber + 1);
+    document.querySelector(".add-to-cart").textContent = productNumber + 1
+    document.querySelector(".add-to-cart").style.display= "block"
+
+
+    }else{
+        localStorage.setItem(`cartNumber`, 1);
+        document.querySelector(".add-to-cart").textContent = 1
+        document.querySelector(".add-to-cart").style.display= "block"
+
+
+    }
+}
+
+function helloAgain(){
+    for(let i = 0; i < addToBag.length; i++){
+        cartNumber()
+     }}
+
+     helloAgain()
+
+
+     loadCartNumber()
+
+
+
+
+
+
+// cartButtonMainPage.addEventListener("click", addingToCart)
+
 
 
 // event.stopPropagation()
