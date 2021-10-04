@@ -48,13 +48,13 @@ a {
 
 .nav-1 {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 15px;
+	max-width: 200px;
+	margin: 10px auto;
 	cursor: pointer;
 }
 
 .nav-1 img /* Logo */ {
-	width: 130px;
+	width: 93%;
 }
 
 .text-nav /* Contact us */ {
@@ -72,14 +72,14 @@ a {
 .nav-5 /* Icon Section in Nav */ {
 	display: flex;
 	flex-direction: row;
-	width: 7%;
-	justify-content: space-evenly;
+	justify-content: center;
+	margin: 15px 0px;
 	font-size: 12px;
 }
 
-.the-icons {
+.logo-and-icons {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 }
 /* Animation Number of cart */
 .add-to-cart {
@@ -140,6 +140,7 @@ a {
 	font: inherit;
 	text-transform: uppercase;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 .dropdown {
@@ -219,11 +220,17 @@ body {
 .back-button {
 	background-color: #000000;
 	border-radius: 100px;
-	width: 20%;
-	padding: 10px;
-	margin: 0 auto;
-	text-align: center;
+	padding: 12px 10px;
 	color: #fafafa;
+	text-align: center;
+	margin: 10px;
+}
+
+.button-options {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .button:hover,
@@ -314,12 +321,6 @@ i:hover {
 		font-size: 20px;
 		justify-self: center;
 	}
-	.nav-5 {
-		grid-area: Icons;
-		justify-self: center;
-		margin-top: 50px;
-		font-size: 8px;
-	}
 
 	.hamburger-menu {
 		display: flex;
@@ -382,10 +383,6 @@ i:hover {
 	}
 	#search::placeholder {
 		color: #fafafa;
-		font-size: 12px;
-	}
-
-	.back-button {
 		font-size: 12px;
 	}
 }
@@ -850,6 +847,17 @@ div[class*="error"] {
 		top: 231px;
 	}
 }
+
+@media (max-width: 580px) {
+	.rainy-jones1 img,
+	.rainy-jones2 img {
+		display: none;
+	}
+	.rainy-jones3 {
+		position: relative;
+		right: 70px;
+	}
+}
 @media (max-width: 488px) {
 	.jacket-list-container {
 		display: grid;
@@ -1099,7 +1107,6 @@ div[class*="error"] {
 
 .top-checkout-section {
 	grid-area: top-checkout-section;
-	margin-bottom: 5%;
 	margin-left: 4%;
 }
 .top-checkout-section h1 {
@@ -1140,6 +1147,11 @@ div[class*="error"] {
 	margin-right: auto;
 }
 
+.remove-button {
+	background: none;
+	border: none;
+}
+
 .middle3 {
 	background: none;
 	border: none;
@@ -1168,7 +1180,6 @@ div[class*="error"] {
 
 .end-checkout-section {
 	grid-area: end-checkout-section;
-	text-align: end;
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -1206,6 +1217,7 @@ div[class*="error"] {
 	align-self: center;
 	line-height: 25px;
 	width: 130px;
+	margin: 40px 0px;
 }
 
 /* The middle-right section */
@@ -1229,6 +1241,7 @@ div[class*="error"] {
 
 #Checkout {
 	padding: 10px 30px;
+	margin: 10px;
 	border-radius: 100px;
 	background-color: #000000;
 	color: #fafafa;
@@ -1262,36 +1275,24 @@ div[class*="error"] {
 }
 
 @media (max-width: 800px) {
+	.middle-checkout-section {
+		width: 84vw;
+	}
+
 	.container-for-checkout {
 		flex-direction: column;
 		max-width: 90%;
 	}
-
+	/* LEFT CHECKOUT */
 	.left-checkout {
-		max-width: 100%;
 		border: none;
 	}
 	.middle1 img {
-		max-width: 35vw;
+		max-width: 30vw;
 		height: auto;
 	}
 
-	.middle2 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.middle2 p {
-		margin: 0 auto;
-		max-width: 50%;
-	}
-
-	.resize-p-ckp {
-		margin: 14px 150px;
-		max-width: 100%;
-	}
+	/* RIGHT CHECKOUT */
 
 	.right-checkout {
 		width: 100%;
@@ -1313,26 +1314,30 @@ div[class*="error"] {
 	.end1-rightcheckout-section {
 		margin: 10% 0%;
 	}
+
+	.resize-p-ckp {
+		max-width: 60%;
+	}
 }
 
 /* 						CHECKOUT SUCCESS PAGE			 */
 
 #h1-checkout-success {
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding: 4% 12%;
+	padding-top: 10%;
 }
 
 .checkout-success-container {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	border: solid 1px black;
 	background-color: rgba(225, 225, 225, 0.6);
 	margin: 6% auto;
-	max-width: 55%;
+	max-width: 85%;
 	border-radius: 100px;
 }
 
@@ -1354,7 +1359,7 @@ div[class*="error"] {
 	background-color: #000000;
 	color: #fafafa;
 	font-family: "faustina", sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	border: none;
 	margin: 12% auto;
