@@ -112,8 +112,8 @@ async function fetchProducts(){
         </div></a>
     </div>
 </div>`
-    }    
-
+    }   
+    /*SHOPPING CART*/ 
     let addToBag = document.querySelectorAll(".cart")
 
     for(let i = 0; i < addToBag.length; i++){
@@ -141,12 +141,13 @@ function cartNumber(item){
     if(productItem){
     localStorage.setItem(`product`, productItem + 1);
     addToCartIcon.textContent = productItem + 1
-    addToCartIcon.style.display= "block"
+
 
 
     }else{
         window.localStorage.setItem(`product`, 1);
         addToCartIcon.textContent = 1
+
     }
     setItems(item);
 }
@@ -188,25 +189,18 @@ function totalCosts(item){
 }
 
 function displayCart(){
-    let productContainer = document.querySelector(".container-for-checkout")
-    // const middle1 = document.querySelector(".middle1")
-    // const middle2 = document.querySelector(".middle2")
-    // const middle3 = document.querySelector(".middle3")
-    let cartItemss = localStorage.getItem("productsInCart")
-    cartItemss = JSON.parse(cartItemss)
+    let productContainer = document.querySelector(".middle-checkout-section")
+    let cartItems = localStorage.getItem("productsInCart")
+    cartItems = JSON.parse(cartItems)
 
-    console.log(cartItemss)
+    console.log(cartItems)
 
-    if(cartItemss && productContainer ){
+    if(cartItems && productContainer ){
         console.log("running")
         productContainer.innerHTML = "";
-        Object.values(cartItemss).map(item => {
+
+        Object.values(cartItems).map(item => {
         productContainer.innerHTML += `
-        <aside class="left-checkout">
-        <section class="top-checkout-section">
-            <h1>My Bag:</h1>
-        </section>
-        <section class="middle-checkout-section">
             <div class="middle1">
             <img src=${item.images[0].src} alt=${item.images[0].alt} />
             </div>
@@ -231,7 +225,6 @@ function displayCart(){
                     <i class="fas fa-minus-circle"></i>
                 </button>
             </div>
-        </section>
            
         `
         
@@ -239,8 +232,9 @@ function displayCart(){
         })
  }}
 
-loadCartNumber()
-displayCart()
+displayCart();
+loadCartNumber();
+
 }
 
 
@@ -266,7 +260,6 @@ const jacketInfo = document.querySelector(".jis-child-1")
 const rainyJones1 = document.querySelector(".rainy-jones1")
 const rainyJones2 = document.querySelector(".rainy-jones2")
 const rainyJones3 = document.querySelector(".rainy-jones3")
-// const containerForCheckout = document.querySelector(".container-for-checkout")
 const jacketColors = document.querySelector("#jacket-color")
 
 async function jacketOption() {
@@ -309,105 +302,5 @@ jacketColors.innerHTML = `<option value="${details.tags[0].name}">${details.tags
 }
 
 jacketOption()
-
-
-// Add to cart functionaily (Numbers)
-
-
-// const cartIcon = document.querySelector(".add-to-cart")
-// const cartButton = document.querySelector("#Add-to-bag")
-
-// let numberofClicks = 0
-
-
-// function addingToCart(){
-//     event.preventDefault()
-
-//     numberofClicks++
-
-//     cartIcon.style.display ="block"
-//     cartIcon.innerHTML = `<span> ${numberofClicks}</span>`
-
-
-// }
-
-// cartButton.addEventListener("click", addingToCart)
-
-
-
-
-
-
-
-
-
-
-
-// cartButtonMainPage.addEventListener("click", addingToCart)
-
-
-
-// event.stopPropagation()
-//    if(jacketColors.value === "yellow"){
-//     rainyJones1.innerHTML = `
-//     <div class="rainy-jones1">
-// 		<img src="images/jacket1.jpg" alt="A image of RainyJones Jacket" />
-// 	</div>`
-//     rainyJones2.innerHTML = `
-//     <div class="rainy-jones2">
-//         <img src="images/jacket1.jpg" alt="A image of RainyJones Jacket" />
-//     </div>`
-//      rainyJones3.innerHTML = `
-//      <div class="rainy-jones3">
-//         <img src="images/jacket1.jpg" alt="A image of RainyJones Jacket" />
-//      </div>` 
-//     }
-
-//    if(jacketColors.value === "blue"){
-//     rainyJones1.innerHTML = `
-//     <div class="rainy-jones1">
-// 		<img src="images/jacket2.jpg" alt="A image of RainyJones Jacket" />
-// 	</div>`
-//     rainyJones2.innerHTML = `
-//     <div class="rainy-jones2">
-//         <img src="images/jacket2-reverse.jpg" alt="A image of RainyJones Jacket" />
-//     </div>`
-//      rainyJones3.innerHTML = `
-//      <div class="rainy-jones3">
-//         <img src="images/jacket2.jpg" alt="A image of RainyJones Jacket" />
-//      </div>` }
-
-
-//     if(jacketColors.value === "black"){
-//         rainyJones1.innerHTML = `
-//         <div class="rainy-jones1">
-//             <img src="images/jacket5.jpg" alt="A image of RainyJones Jacket" />
-//         </div>`
-//         rainyJones2.innerHTML = `
-//         <div class="rainy-jones2">
-//             <img src="images/jacket5.jpg" alt="A image of RainyJones Jacket" />
-//         </div>`
-//          rainyJones3.innerHTML = `
-//          <div class="rainy-jones3">
-//             <img src="images/jacket5.jpg" alt="A image of RainyJones Jacket" />
-//          </div>` }
-
-
-//     if(jacketColors.value === "Green"){
-//         rainyJones1.innerHTML = `
-//         <div class="rainy-jones1">
-//           <img src="images/jacket4.jpg" alt="A image of RainyJones Jacket" />
-//         </div>`
-//         rainyJones2.innerHTML = `
-//         <div class="rainy-jones2">
-//            <img src="images/jacket4.jpg" alt="A image of RainyJones Jacket" />
-//         </div>`
-//         rainyJones3.innerHTML = `
-//         <div class="rainy-jones3">
-//            <img src="images/jacket4.jpg" alt="A image of RainyJones Jacket" />
-//         </div>` }
-//    }
-
-//    jacketColors.addEventListener("change", jacketOption) 
 
 
