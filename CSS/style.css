@@ -498,8 +498,7 @@ main form {
 	border: 0;
 }
 
-.form1 input[type="text"],
-.form1 input[type="email"] {
+::placeholder {
 	color: #000;
 	font-weight: bold;
 }
