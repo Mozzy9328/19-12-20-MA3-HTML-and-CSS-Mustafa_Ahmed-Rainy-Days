@@ -859,6 +859,11 @@ div[class*="error"] {
 	}
 }
 @media (max-width: 488px) {
+	.button-options {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.jacket-list-container {
 		display: grid;
 		grid-template-rows: 300px 300px;
@@ -1244,7 +1249,7 @@ div[class*="error"] {
 }
 
 #checkout {
-	padding: 12px 30px;
+	padding: 13px 30px;
 	margin: 10px;
 	border-radius: 100px;
 	background-color: #000000;
