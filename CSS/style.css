@@ -403,7 +403,7 @@ CONTACT US PAGE
 
 /* Contact information section*/
 .fourth-container {
-	max-width: 90%;
+	/* max-width: 90%; */
 	padding-top: 34px;
 	margin: 0 auto;
 	display: flex;
