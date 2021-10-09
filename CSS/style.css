@@ -1322,6 +1322,10 @@ div[class*="error"] {
 	.resize-p-ckp {
 		max-width: 60%;
 	}
+
+	.back-button #checkout {
+		padding: 10px 30px;
+	}
 }
 
 /* 						CHECKOUT SUCCESS PAGE			 */
