@@ -227,7 +227,6 @@ body {
 }
 
 .button-options {
-	padding: 10px 0px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1244,8 +1243,8 @@ div[class*="error"] {
 	margin: 0 auto;
 }
 
-#Checkout {
-	padding: 10px 30px;
+#checkout {
+	padding: 12px 30px;
 	margin: 10px;
 	border-radius: 100px;
 	background-color: #000000;
@@ -1256,7 +1255,7 @@ div[class*="error"] {
 	border: none;
 }
 
-#Checkout:hover,
+#checkout:hover,
 #Continue-Shopping:hover {
 	background-color: #707070;
 }
