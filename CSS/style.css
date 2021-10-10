@@ -528,15 +528,6 @@ div[class*="error"] {
 	font-size: 12px;
 	text-align: center;
 }
-
-/* .contact-footer {
-	position: relative;
-	text-align: center;
-	padding: 1px 0px;
-	top: 8%;
-	font-weight: bold;
-	margin: 0 auto;
-} */
 /* To remove the map*/
 @media (max-width: 1184px) {
 	.contact-info {
@@ -732,7 +723,6 @@ div[class*="error"] {
 
 .jacket-list-container {
 	display: grid;
-	grid-template-rows: 300px 300px;
 	justify-content: space-around;
 	row-gap: 150px;
 	grid-template-areas:
@@ -833,9 +823,6 @@ div[class*="error"] {
 
 	.jacket-list-container {
 		display: grid;
-		grid-template-rows: 300px 300px;
-		justify-content: space-around;
-		row-gap: 150px;
 		grid-template-areas:
 			"Jacket1 Jacket2"
 			"Jacket3 Jacket4"
