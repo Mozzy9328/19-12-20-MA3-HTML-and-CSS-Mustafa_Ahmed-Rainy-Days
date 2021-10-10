@@ -1143,6 +1143,7 @@ div[class*="error"] {
 }
 
 .remove-button {
+	cursor: pointer;
 	background: none;
 	border: none;
 }
